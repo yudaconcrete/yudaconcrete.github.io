@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yudaconcrete.github.io/sitemap.xml
