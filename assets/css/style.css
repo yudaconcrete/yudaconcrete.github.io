@@ -91,8 +91,8 @@ body {
 }
 .hero::before {
   content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-  background: url('../images/hero-bg.jpg') center/cover;
-  opacity: 0.15; mix-blend-mode: overlay;
+  background: url('../images/Banner02.jpg') center/cover;
+  opacity: 0.2; mix-blend-mode: overlay;
 }
 .hero-content { position: relative; z-index: 2; max-width: 800px; }
 .hero-badge {

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="cache" content="no-cache">
+    <link rel="shortcut icon" href="./favicon.ico?origin=vr.baidu.com">
+    <link rel="stylesheet" href="./static/style/share.css?v=6.0.11">
+</head>
+<body>
+    <div id="container"></div>
+    <div id="loading-container">
+        <div class="loading-content">
+            <div class="loading-name"></div>
+            <div class="loading-logo"></div>
+            <div class="loading-progress">
+                <b style="width: .0%"></b>
+                <em>0%</em>
+            </div>
+        </div>
+    </div>
+    <div id="share-token-container">
+        <div class="share-token-box">
+            <h3 data-lang="password">访问密码</h3>
+            <section name="token">
+                <input for="token" id="share-token" data-lang="pwd_placeholder" placeholder="请输入访问密码" type="text" value="" />
+                <p class="error-message" data-lang="pwd_error">密码错误</p>
+            </section>
+        
+            <section name="captcha">
+                <div class="captcha-box">
+                    <input for="captcha" class="captcha-code" data-lang="captcha_placeholder" placeholder="请输入验证码" type="text" />
+                    <img class="captcha-img" />
+                    <img class="refresh-btn" src="./static/media/svg/refresh.svg" />
+                </div>
+                <p class="error-message" data-lang="captcha_error">验证码错误</p>
+            </section>
+        
+            <button type="button" disabled data-lang="confirm">确定</button>
+        </div>
+    </div>
+    <div id="share-error-container">
+        <span class="share-error-image"></span>
+        <div class="share-error-text-hint">
+            精彩内容正在努力生成中，请稍后重试...
+        </div>
+        <div class="share-error-btn-refresh">
+            刷新重试
+        </div>
+    </div>
+    <!-- <script src="./static/js/inobounce.min.js"></script> -->
+    <script src="./static/js/network.js?v=6.0.11"></script>
+    <script src="./static/js/share.js?v=6.0.11"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js" type="text/javascript"></script>
+    <script src="https://open.mobile.qq.com/sdk/qqapi.js" type="text/javascript"></script>
+    <script src="https://api.map.baidu.com/api?v=3.0&type=webgl&ak=f6TT1hIoPc0szjpOTToNPTqG0i39GyMw"></script>
+    <script>
+        window.Share.initTest();
+        window.Share.initPano();
+    </script>
+</body>
+</html>
