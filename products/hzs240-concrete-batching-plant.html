@@ -5,6 +5,16 @@
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
+
+<style>
+.nav-lang { position: relative; }
+.lang-dropdown { display: none; position: absolute; top: 100%; right: 0; background: white; box-shadow: 0 2px 12px rgba(0,0,0,0.15); border-radius: 8px; min-width: 160px; z-index: 1000; padding: 8px 0; list-style: none; }
+.lang-dropdown li { padding: 0; }
+.lang-dropdown a { display: block; padding: 8px 16px; color: var(--text); text-decoration: none; font-size: 14px; white-space: nowrap; }
+.lang-dropdown a:hover { background: var(--bg-light); }
+.nav-lang:hover .lang-dropdown { display: block; }
+</style>
+<!-- lang-switcher-added -->
 </head><body>
 <nav class="nav"><div class="nav-inner"><a href="/" class="nav-logo"><h1>YudaHualong</h1><span>Concrete Batching Plant Solutions</span></a>
 <ul class="nav-links">
@@ -14,6 +24,12 @@
       <li><a href="../products/mobile-concrete-batching-plant.html">Mobile Plant</a></li>
       <li><a href="../about.html">About</a></li>
       <li><a href="../contact.html" class="nav-cta">Get Quote</a></li>
+          <li class="nav-lang"><a href="javascript:void(0)" onclick="toggleLang()">🌐 English ▼</a>
+        <ul class="lang-dropdown">
+          <li><a href="/">🇬🇧 English</a></li>
+          <li><a href="/ru/">🇷🇺 Русский</a></li>
+        </ul>
+      </li>
     </ul></div></nav>
 <section class="page-header"><div class="container">
 <h1>HZS240 Concrete Batching Plant</h1>
@@ -90,6 +106,10 @@ The HZS series concrete batching plant is a forced-type, high-efficiency equipme
   <div><h4>Company</h4><ul><li><a href="../about.html">About YudaHualong</a></li><li><a href="../company/factory.html">Factory</a></li><li><a href="../company/certificates.html">Certifications</a></li><li><a href="../company/customer-visits.html">Customer Visits</a></li></ul></div>
   <div><h4>Support</h4><ul><li><a href="../contact.html">Contact Us</a></li><li><a href="../faq.html">FAQ</a></li></ul></div>
 </div><div class="footer-bottom">&copy; 2026 YudaHualong Concrete. All rights reserved. | Zhengzhou, Henan, China</div></div></footer>
+<script>
+function toggleLang() { document.querySelector('.lang-dropdown').classList.toggle('show'); }
+document.addEventListener('click', function(e) { if(!e.target.closest('.nav-lang')) document.querySelector('.lang-dropdown')?.classList.remove('show'); });
+</script>
 </body></html>
 
 
