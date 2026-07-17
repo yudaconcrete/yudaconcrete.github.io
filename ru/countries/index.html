@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Страны поставок | YudaHualong Concrete</title>
+<meta name="description" content="YudaHualong поставляет бетонные заводы по всему миру: Россия, Казахстан, Узбекистан, Нигерия, Пакистан, Саудовская Аравия, Кения и другие страны.">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<style>
+.nav-lang { position: relative; }
+.lang-dropdown { display: none; position: absolute; top: 100%; right: 0; background: white; box-shadow: 0 2px 12px rgba(0,0,0,0.15); border-radius: 8px; min-width: 160px; z-index: 1000; padding: 8px 0; list-style: none; }
+.lang-dropdown li { padding: 0; }
+.lang-dropdown a { display: block; padding: 8px 16px; color: var(--text); text-decoration: none; font-size: 14px; white-space: nowrap; }
+.lang-dropdown a:hover { background: var(--bg-light); }
+.nav-lang:hover .lang-dropdown { display: block; }
+.country-card { display:block; padding:32px; border-radius:var(--radius); background:var(--bg-light); text-decoration:none; color:inherit; transition:transform 0.2s, box-shadow 0.2s; border:1px solid var(--border); }
+.country-card:hover { transform:translateY(-3px); box-shadow:0 4px 20px rgba(0,0,0,0.1); }
+.country-flag { font-size:48px; margin-bottom:12px; }
+.country-name { font-size:20px; font-weight:700; color:var(--primary); margin-bottom:8px; }
+.country-desc { font-size:14px; color:var(--text-gray); line-height:1.6; }
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-inner"><a href="/" class="nav-logo"><h1>YudaHualong</h1><span>Производитель бетонного оборудования</span></a>
+<ul class="nav-links">
+      <li><a href="/ru/">Главная</a></li>
+      <li><a href="/ru/products/concrete-batching-plant.html">Продукция</a></li>
+      <li><a href="/ru/products/hzs-concrete-batching-plant.html">Серия HZS</a></li>
+      <li><a href="/ru/products/mobile-concrete-batching-plant.html">Мобильные</a></li>
+      <li><a href="/ru/about.html">О нас</a></li>
+      <li><a href="/ru/countries/">Страны</a></li>
+      <li><a href="/ru/contact.html" class="nav-cta">Связаться</a></li>
+          <li class="nav-lang"><a href="javascript:void(0)" onclick="toggleLang()">🌐 Русский ▼</a>
+        <ul class="lang-dropdown">
+          <li><a href="/">🇬🇧 English</a></li>
+          <li><a href="/ru/">🇷🇺 Русский</a></li>
+        </ul>
+      </li>
+    </ul></div></nav>
+
+<section class="page-header"><div class="container">
+<h1>Страны поставок</h1>
+<p>YudaHualong поставляет бетонные заводы на строительные и инфраструктурные рынки по всему миру. Выберите страну для получения информации о решениях и логистике.</p>
+</div></section>
+
+<section class="section"><div class="container">
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:800px;margin:0 auto;">
+  <a href="russia.html" class="country-card">
+    <div class="country-flag">🇷🇺</div>
+    <div class="country-name">Россия</div>
+    <div class="country-desc">Крупнейший строительный рынок. Ж/Д доставка 12-18 дней до Москвы. HZS120/180 для инфраструктуры. Полная адаптация к холоду.</div>
+  </a>
+  <a href="kazakhstan.html" class="country-card">
+    <div class="country-flag">🇰🇿</div>
+    <div class="country-name">Казахстан</div>
+    <div class="country-desc">Программа Нурлы Жол. Ж/Д доставка через Алашанькоу. Мобильные заводы для дорожного строительства.</div>
+  </a>
+  <a href="uzbekistan.html" class="country-card">
+    <div class="country-flag">🇺🇿</div>
+    <div class="country-name">Узбекистан</div>
+    <div class="country-desc">Растущий строительный сектор. Ж/Д доставка 10-14 дней до Ташкента. HZS60/75/90 для товарного бетона.</div>
+  </a>
+  <a href="nigeria.html" class="country-card">
+    <div class="country-flag">🇳🇬</div>
+    <div class="country-name">Нигерия</div>
+    <div class="country-desc">Крупнейшая экономика Африки. Морская доставка в Лагос. HZS50/75 для товарного бетона. Мобильные решения.</div>
+  </a>
+  <a href="saudi-arabia.html" class="country-card">
+    <div class="country-flag">🇸🇦</div>
+    <div class="country-name">Саудовская Аравия</div>
+    <div class="country-desc">Мегапроекты Vision 2030. HZS180/240/Сдвоенный HZS240. Адаптация к пустынному климату.</div>
+  </a>
+  <a href="pakistan.html" class="country-card">
+    <div class="country-flag">🇵🇰</div>
+    <div class="country-name">Пакистан</div>
+    <div class="country-desc">Проекты CPEC. Доставка морем или через Каракорумское шоссе. HZS60/90 для коммерческого бетона.</div>
+  </a>
+  <a href="kenya.html" class="country-card">
+    <div class="country-flag">🇰🇪</div>
+    <div class="country-name">Кения</div>
+    <div class="country-desc">Крупнейшая экономика Восточной Африки. Морская доставка в Момбасу. HZS50/75 — входной уровень.</div>
+  </a>
+</div>
+
+<div style="text-align:center;margin-top:30px;padding:32px;background:var(--bg-light);border-radius:var(--radius);max-width:600px;margin-left:auto;margin-right:auto;">
+  <h3>Вашей страны нет в списке?</h3>
+  <p style="color:var(--text-gray);margin:8px 0 16px;">YudaHualong также поставляет оборудование в другие страны. Свяжитесь с нами.</p>
+  <a href="/ru/contact.html" class="btn btn-primary">Связаться с нами</a>
+</div>
+
+</div></section>
+
+<footer class="footer"><div class="container"><div class="footer-grid">
+  <div class="footer-brand"><h3>YudaHualong Concrete</h3><p>Производитель бетонных заводов. Прямые поставки из Чжэнчжоу, Китай.</p><p style="margin-top:12px;">Тел: +86 18638788818</p></div>
+  <div><h4>Продукция</h4><ul><li><a href="/ru/products/hzs-concrete-batching-plant.html">Серия HZS</a></li><li><a href="/ru/products/mobile-concrete-batching-plant.html">Мобильные</a></li><li><a href="/ru/products/concrete-mixer.html">Бетоносмесители</a></li><li><a href="/ru/products/concrete-batching-plant.html">Вся продукция</a></li></ul></div>
+  <div><h4>Компания</h4><ul><li><a href="/ru/about.html">О YudaHualong</a></li><li><a href="/ru/company/factory.html">Завод</a></li><li><a href="/ru/company/certificates.html">Сертификаты</a></li><li><a href="/ru/company/customer-visits.html">Визиты клиентов</a></li><li><a href="/ru/countries/">Страны</a></li></ul></div>
+  <div><h4>Поддержка</h4><ul><li><a href="/ru/contact.html">Контакты</a></li><li><a href="/ru/faq.html">FAQ</a></li></ul></div>
+</div><div class="footer-bottom">&copy; 2026 YudaHualong Concrete. Все права защищены. | Чжэнчжоу, Хэнань, Китай</div></div></footer>
+<script>
+function toggleLang() { document.querySelector('.lang-dropdown').classList.toggle('show'); }
+document.addEventListener('click', function(e) { if(!e.target.closest('.nav-lang')) document.querySelector('.lang-dropdown')?.classList.remove('show'); });
+</script>
+</body>
+</html>
