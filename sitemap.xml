@@ -274,4 +274,116 @@
     <priority>0.6</priority>
   </url>
 
+
+  <url>
+    <loc>https://yudaconcrete.github.io/countries/turkey.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yudaconcrete.github.io/countries/turkey.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yudaconcrete.github.io/"/>
+  </url>
+
+  <url>
+    <loc>https://yudaconcrete.github.io/countries/mexico.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yudaconcrete.github.io/countries/mexico.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yudaconcrete.github.io/"/>
+  </url>
+
+  <url>
+    <loc>https://yudaconcrete.github.io/countries/brazil.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yudaconcrete.github.io/countries/brazil.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yudaconcrete.github.io/"/>
+  </url>
+
+  <url>
+    <loc>https://yudaconcrete.github.io/countries/philippines.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yudaconcrete.github.io/countries/philippines.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yudaconcrete.github.io/"/>
+  </url>
+
+  <url>
+    <loc>https://yudaconcrete.github.io/countries/thailand.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yudaconcrete.github.io/countries/thailand.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yudaconcrete.github.io/"/>
+  </url>
+
+  <url>
+    <loc>https://yudaconcrete.github.io/ar/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yudaconcrete.github.io/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yudaconcrete.github.io/"/>
+  </url>
+
+  <url>
+    <loc>https://yudaconcrete.github.io/ar/about.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yudaconcrete.github.io/ar/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yudaconcrete.github.io/"/>
+  </url>
+
+  <url>
+    <loc>https://yudaconcrete.github.io/ar/contact.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yudaconcrete.github.io/ar/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yudaconcrete.github.io/"/>
+  </url>
+
+  <url>
+    <loc>https://yudaconcrete.github.io/ar/countries/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yudaconcrete.github.io/ar/countries/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yudaconcrete.github.io/"/>
+  </url>
+
+  <url>
+    <loc>https://yudaconcrete.github.io/ar/countries/saudi-arabia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yudaconcrete.github.io/ar/countries/saudi-arabia.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yudaconcrete.github.io/"/>
+  </url>
+
+  <url>
+    <loc>https://yudaconcrete.github.io/ar/countries/uae.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yudaconcrete.github.io/ar/countries/uae.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yudaconcrete.github.io/"/>
+  </url>
+
+  <url>
+    <loc>https://yudaconcrete.github.io/ar/countries/qatar.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yudaconcrete.github.io/ar/countries/qatar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yudaconcrete.github.io/"/>
+  </url>
+
+  <url>
+    <loc>https://yudaconcrete.github.io/ar/countries/kuwait.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yudaconcrete.github.io/ar/countries/kuwait.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yudaconcrete.github.io/"/>
+  </url>
+
+  <url>
+    <loc>https://yudaconcrete.github.io/ar/countries/egypt.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yudaconcrete.github.io/ar/countries/egypt.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yudaconcrete.github.io/"/>
+  </url>
 </urlset>

@@ -344,3 +344,49 @@ body {
 .grid-img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
 @media (max-width: 768px) { .image-grid-4col { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 480px) { .image-grid-4col { grid-template-columns: 1fr; } }
+
+/* ©¤©¤©¤ Arabic RTL Support ©¤©¤©¤ */
+html[lang="ar"] {
+  direction: rtl;
+  text-align: right;
+}
+html[lang="ar"] body {
+  font-family: 'Noto Sans Arabic', 'Tajawal', 'Inter', sans-serif;
+}
+html[lang="ar"] .nav-inner,
+html[lang="ar"] .container,
+html[lang="ar"] .hero-content,
+html[lang="ar"] .section-content,
+html[lang="ar"] .footer-inner {
+  direction: rtl;
+  text-align: right;
+}
+html[lang="ar"] .nav-links {
+  flex-direction: row-reverse;
+}
+html[lang="ar"] .hero-content { text-align: right; }
+html[lang="ar"] .hero-stats { flex-direction: row-reverse; }
+html[lang="ar"] .card-grid { direction: rtl; }
+html[lang="ar"] .footer-grid { direction: rtl; }
+html[lang="ar"] .feature-grid { direction: rtl; }
+html[lang="ar"] .why-grid { direction: rtl; }
+html[lang="ar"] .about-grid { direction: rtl; }
+html[lang="ar"] .trust-grid { direction: rtl; }
+html[lang="ar"] .page-header { text-align: center; }
+html[lang="ar"] .breadcrumb { direction: rtl; }
+html[lang="ar"] .breadcrumb a + a::before { content: " \2039 "; }
+html[lang="ar"] .mobile-toggle { margin-right: auto; margin-left: 0; }
+html[lang="ar"] .product-specs { direction: rtl; }
+html[lang="ar"] .product-specs th,
+html[lang="ar"] .product-specs td { text-align: right; }
+html[lang="ar"] .param-table th,
+html[lang="ar"] .param-table td { text-align: right; }
+
+/* Arabic font import */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap');
+
+@media (max-width: 768px) {
+  html[lang="ar"] .nav-links {
+    text-align: right;
+  }
+}
