@@ -1,74 +1,408 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YUDA HUALONG | Fabricante de Plantas de Hormigón | 25-480 m³/h</title>
-<meta name="description" content="YUDA HUALONG es un fabricante profesional de plantas de hormigón en China. Plantas HZS fijas y móviles de 25 a 480 m³/h. Certificado CE, precio directo de fábrica.">
-<link rel="icon" type="image/svg+xml" href="../data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231a3a5c'/><text x='16' y='22' text-anchor='middle' fill='white' font-size='16' font-weight='bold'>YC</text></svg>">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YUDA HUALONG - Fabricante de Plantas de Hormigón | 25-480 m³/h</title>
+<meta name="description" content="YUDA HUALONG - Fabricante profesional de plantas de hormigón en China. Plantas HZS fijas y móviles de 25-480 m³/h. Certificado CE, directo de fábrica, 25+ años de experiencia.">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
-<style>.nav-lang{position:relative}.lang-dropdown{display:none;position:absolute;top:100%;right:0;background:white;box-shadow:0 2px 12px rgba(0,0,0,0.15);border-radius:8px;min-width:160px;z-index:1000;padding:8px 0;list-style:none}.lang-dropdown li{padding:0}.lang-dropdown a{display:block;padding:8px 16px;color:var(--text);text-decoration:none;font-size:14px;white-space:nowrap}.lang-dropdown a:hover{background:var(--bg-light)}.nav-lang:hover .lang-dropdown{display:block}</style>
-<link rel="alternate" hreflang="es" href="https://yudaconcrete.github.io/es/">
-<link rel="alternate" hreflang="en" href="https://yudaconcrete.github.io/">
+<style>
+
+
+
+
+
+
+
+/* Language switcher */
+.language-switcher {
+    position: relative;
+    display: inline-block;
+}
+.language-btn {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.language-btn:hover {
+    background: #e8f2ff;
+}
+.language-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 5px;
+    background: white;
+    min-width: 180px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 9999;
+    padding: 4px 0;
+}
+.language-dropdown a {
+    display: block;
+    padding: 10px 14px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+.language-dropdown a:hover {
+    background: #f0f6ff;
+    color: #e63946;
+}
+.language-switcher:hover .language-dropdown,
+.language-switcher.active .language-dropdown {
+    display: block;
+}
+
+</style>
+<link rel="alternate" hreflang="en" href="https://yudaconcrete.github.io/index.html">
+<link rel="alternate" hreflang="ru" href="https://yudaconcrete.github.io/ru/index.html">
+<link rel="alternate" hreflang="es" href="https://yudaconcrete.github.io/es/index.html">
 <link rel="alternate" hreflang="x-default" href="https://yudaconcrete.github.io/">
-</head><body>
-<nav class="nav"><div class="nav-inner"><a href="/es/" class="nav-logo"><h1>YUDA HUALONG</h1><span>Plantas de Hormigón</span></a>
-<ul class="nav-links">
-  <li><a href="/es/">Inicio</a></li>
-  <li><a href="/es/products/concrete-batching-plant.html">Productos</a></li>
-  <li><a href="/es/products/hzs-concrete-batching-plant.html">Serie HZS</a></li>
-  <li><a href="/es/products/mobile-concrete-batching-plant.html">Plantas Móviles</a></li>
-  <li><a href="/es/about.html">Sobre Nosotros</a></li>
-  <li><a href="/es/countries/">Mercados Globales</a></li>
-  <li><a href="/es/contact.html" class="nav-cta">Solicitar Presupuesto</a></li>
-  <li class="nav-lang"><a href="javascript:void(0)" onclick="toggleLang()">[🌐] Español ▼</a>
-    <ul class="lang-dropdown">
-          <li><a href="/">[EN] English</a></li>
-          <li><a href="/ru/">[RU] Русский</a></li>
-          <li><a href="/ar/">[AR] العربية</a></li>
-          <li><a href="/es/">[ES] Español</a></li>
-          <li><a href="/fr/">[FR] Français</a></li>
-          <li><a href="/pt/">[PT] Português</a></li>
+
+    <link rel="canonical" href="https://yudaconcrete.github.io/es/index.html">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/es/" class="nav-logo"><h1>YudaHualong</h1><span>Concrete Batching Plant Solutions</span></a>
+    <div class="mobile-toggle" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('active')"><span></span><span></span><span></span></div>
+    <ul class="nav-links">
+      <li><a href="/es/">Inicio</a></li>
+      <li><a href="/es/products/concrete-batching-plant.html">Productos</a></li>
+      <li><a href="/es/products/hzs-concrete-batching-plant.html">Serie HZS</a></li>
+      <li><a href="/es/products/mobile-concrete-batching-plant.html">Móvil</a></li>
+      <li><a href="/es/about.html">Sobre Nosotros</a></li>
+      <li><a href="/es/countries/">Mercados</a></li>
+      <li><a href="/es/contact.html" class="nav-cta">Contacto</a></li>
+      <li class="language-switcher">
+            <button class="language-btn" onclick="this.parentElement.classList.toggle('active')">🌐 Español ▾</button>
+            <div class="language-dropdown">
+                <a href="/">English</a>
+                <a href="/ru/">Русский</a>
+                <a href="/ar/">العربية</a>
+                <a href="/es/">Español</a>
+                <a href="/fr/">Français</a>
+                <a href="/pt/">Português</a>
+            </div>
+          </li>
         </ul>
-  </li>
-</ul></div></nav>
-<section class="hero"><div class="container hero-content">
-  <div class="hero-badge">25-480 m³/h • Certificado CE • Directo de Fábrica</div>
-  <h1>YUDA HUALONG<br>Plantas de Hormigón <span>de China</span></h1>
-  <p>Fabricante profesional de plantas de hormigón en China. Serie HZS completa de 25 a 480 m³/h. Plantas fijas y móviles para proyectos de construcción globales. Precio directo de fábrica con soporte completo de instalación.</p>
-  <div class="hero-buttons">
-    <a href="/es/contact.html" class="btn btn-primary">Obtener Presupuesto</a>
-    <a href="tel:+861863878818" class="btn btn-primary">Tel: +86 18638788818</a>
-    <a href="/es/products/concrete-batching-plant.html" class="btn btn-outline">Ver Productos</a>
   </div>
-  <div class="hero-stats">
-    <div class="hero-stat"><div class="hero-stat-num">25+</div><div class="hero-stat-label">Años de Experiencia</div></div>
-    <div class="hero-stat"><div class="hero-stat-num">50+</div><div class="hero-stat-label">Países Exportados</div></div>
-    <div class="hero-stat"><div class="hero-stat-num">10+</div><div class="hero-stat-label">Modelos HZS</div></div>
-    <div class="hero-stat"><div class="hero-stat-num">1200</div><div class="hero-stat-label">Capital (Millón)</div></div>
+</nav>
+<section class="hero">
+  <div class="container hero-content">
+    <div class="hero-badge">25-480 m&sup3;/h &bull; Certificado CE &bull; Directo de Fábrica</div>
+    <h1>YUDA HUALONG<br>Batching Plant <span>Manufacturer</span></h1>
+    <p>Professional concrete batching plant manufacturer in China. Complete HZS series from 25 to 480 m&sup3;/h. Mobile and stationary solutions for global construction projects. Factory direct pricing with full installation support.</p>
+    <div class="hero-buttons">
+      <a href="contact.html" class="btn btn-primary">Obtener cotización de fábrica</a>
+      <a href="tel:+8618638788818" class="btn btn-primary">Teléfono: +86 18638788818</a>
+      <a href="products/concrete-batching-plant.html" class="btn btn-outline">Ver productos</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="hero-stat-num">25+</div><div class="hero-stat-label">Años de Experiencia en la Industria</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">40,000</div><div class="hero-stat-label">m² Base de Producción</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">7+</div><div class="hero-stat-label">Países de Exportación</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">10</div><div class="hero-stat-label">Modelos de Plantas Available</div></div>
+    </div>
   </div>
-</div></section>
-<section class="section"><div class="container">
-  <h2>Plantas de Hormigón YUDA HUALONG</h2>
-  <p style="text-align:center;color:var(--text-gray);max-width:700px;margin:0 auto 40px;font-size:16px;line-height:1.8;">ZHENGZHOU YUDA HUALONG Heavy Industry, establecida en Zhengzhou, Henan. Especializada en diseño y fabricación de plantas de hormigón fijas y móviles con capacidad de 25-480 m³/h. Certificada ISO9001 y CE, con más de 25 años de experiencia.</p>
-  <div class="card-grid">
-    <div class="card"><img src="../assets/images/hzs120-1.jpg" alt="Planta de Hormigón HZS120" style="width:100%;height:220px;object-fit:cover;border-radius:8px 8px 0 0;"><div style="padding:20px;"><h3>Serie HZS Fija</h3><p style="font-size:14px;color:var(--text-gray);">Plantas fijas de 25 a 240 m³/h. Ideales para proyectos grandes y medianos.</p><a href="/es/products/hzs-concrete-batching-plant.html" class="btn btn-primary" style="margin-top:12px;display:inline-block;">Ver Modelos</a></div></div>
-    <div class="card"><img src="../assets/images/mobile-plant-01.jpg" alt="Planta Móvil" style="width:100%;height:220px;object-fit:cover;border-radius:8px 8px 0 0;"><div style="padding:20px;"><h3>Plantas Móviles</h3><p style="font-size:14px;color:var(--text-gray);">Fáciles de transportar e instalar. Perfectas para proyectos que requieren movilidad.</p><a href="/es/products/mobile-concrete-batching-plant.html" class="btn btn-primary" style="margin-top:12px;display:inline-block;">Ver Modelos</a></div></div>
-    <div class="card"><img src="../assets/images/js3000-mixer-01.jpg" alt="Mezcladora JS" style="width:100%;height:220px;object-fit:cover;border-radius:8px 8px 0 0;"><div style="padding:20px;"><h3>Mezcladoras JS</h3><p style="font-size:14px;color:var(--text-gray);">Mezcladoras de doble eje forzado JS, de 750 a 4500 litros.</p><a href="/es/products/concrete-mixer.html" class="btn btn-primary" style="margin-top:12px;display:inline-block;">Ver Modelos</a></div></div>
+</section>
+
+<section class="trust-bar">
+  <div class="container trust-inner">
+    <div class="trust-item"><span class="trust-item-icon">CE</span> Certificado CE</div>
+    <div class="trust-item"><span class="trust-item-icon">ISO</span> ISO 9001</div>
+    <div class="trust-item"><span class="trust-item-icon">$</span> Directo de Fábrica Price</div>
+    <div class="trust-item"><span class="trust-item-icon">W</span> Soporte de Instalación</div>
+    <div class="trust-item"><span class="trust-item-icon">P</span> Suministro de Repuestos</div>
+    <div class="trust-item"><span class="trust-item-icon">24</span> Postventa 24/7</div>
   </div>
-</div></section>
-<section class="section" style="background:var(--bg-light);"><div class="container">
-  <h2>Por Qué Elegir YUDA HUALONG</h2>
-  <div class="feature-grid">
-    <div class="feature-card"><div class="feature-icon">[Factory]</div><h3>Fábrica Profesional</h3><p>40,000 m² de fábrica en Zhengzhou con líneas de producción modernas.</p></div>
-    <div class="feature-card"><div class="feature-icon">[OK]</div><h3>Certificaciones Globales</h3><p>ISO9001 y CE. Control de calidad riguroso.</p></div>
-    <div class="feature-card"><div class="feature-icon">[Global]</div><h3>Exportación Global</h3><p>Exportado a más de 50 países incluyendo México, Brasil y América Latina.</p></div>
-    <div class="feature-card"><div class="feature-icon">[Tools]</div><h3>Soporte Técnico</h3><p>Instalación, operación, capacitación y repuestos.</p></div>
+</section>
+
+
+
+
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Productos</div>
+      <h2>Gama Completa de Plantas de Hormigón</h2>
+      <p class="subtitle">25 to 480 m&sup3;/h capacity. Mobile or stationary. CE certified, factory direct from China.</p>
+    </div>
+    <div class="product-grid">
+      <a href="products/hzs-concrete-batching-plant.html" class="product-card">
+        <div class="product-card-img"><img src="../assets/images/double-hzs240.jpg" alt="HZS HZS Concrete Batching Plant"></div>
+        <div class="product-card-body"><h3>Plantas HZS</h3><p>25-480 m&sup3;/h forced-type concrete batching plants. JS twin-shaft mixer, PLC auto control, precise weighing. Ideal for commercial concrete and large infrastructure projects.</p><span class="product-card-link">Ver Gama</span></div>
+      </a>
+      <a href="products/mobile-concrete-batching-plant.html" class="product-card">
+        <div class="product-card-img"><img src="../assets/images/mobile-plant.jpg" alt="Mobile Concrete Batching Plant"></div>
+        <div class="product-card-body"><h3>Planta de Hormigón Móvil</h3><p>Planta móvil de tipo forzado con diseño montado sobre ruedas. Sin necesidad de cimentación, instalación rápida. Ideal para construcción de carreteras y proyectos remotos.</p><span class="product-card-link">Más Información</span></div>
+      </a>
+      <a href="products/trailer-mobile-concrete-plant.html" class="product-card">
+        <div class="product-card-img"><img src="../assets/images/hzs120.jpg" alt="Trailer Planta de Hormigón Móvil"></div>
+        <div class="product-card-body"><h3>Planta Móvil sobre Remolque</h3><p>Planta móvil tipo tambor sobre remolque. Diseño remolcable por camión, operativa en horas. Perfecta para proyectos que se trasladan de un sitio a otro.</p><span class="product-card-link">Más Información</span></div>
+      </a>
+      <a href="products/concrete-mixer.html" class="product-card">
+        <div class="product-card-img"><img src="../assets/images/js3000.jpg" alt="JS Twin Shaft Concrete Mixer"></div>
+        <div class="product-card-body"><h3>Mezcladoras JS de Hormigón</h3><p>Mezcladoras forzadas de doble eje desde JS500 hasta JS4500. Para unidades principales de plantas y operaciones de mezclado independientes. Alta uniformidad, piezas de desgaste duraderas.</p><span class="product-card-link">Ver Gama</span></div>
+      </a>
+    </div>
+    <div style="text-align:center;margin-top:30px;">
+      <a href="products/concrete-batching-plant.html" class="btn btn-primary">Ver todos los productos y especificaciones</a>
+    </div>
   </div>
-</div></section>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Why YudaHualong</div>
+      <h2>25 Años de Excelencia en Equipos de Hormigón</h2>
+      <p class="subtitle">Professional manufacturer delivering complete concrete production solutions worldwide.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="why-icon">F</div><h3>Directo de Fábrica Pricing</h3><p>40,000m² production base in Zhengzhou, China. No middlemen, precios de fábrica competitivos con soporte directo del fabricante.</p></div>
+      <div class="why-card"><div class="why-icon">G</div><h3>Experiencia en Exportación Global</h3><p>Exportado con éxito a Rusia, Nigeria, Pakistán, Kenia, Arabia Saudita, Vietnam, Kazajistán, Uzbekistán y más.</p></div>
+      <div class="why-card"><div class="why-icon">S</div><h3>Soporte de Servicio Completo</h3><p>Planificación preventa, guía de instalación, puesta en marcha, capacitación de operadores y suministro de repuestos de por vida.</p></div>
+      <div class="why-card"><div class="why-icon">C</div><h3>Certificado CE e ISO</h3><p>Estándares internacionales. Certificación CE, ISO 9001, 2 patentes de modelo de utilidad.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Mercados Globales</div>
+      <h2>Sirviendo Mercados de Construcción en Todo el Mundo</h2>
+      <p class="subtitle">Factory-direct concrete batching plants delivered to 7+ countries. Click your market for tailored solutions and logistics information.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;max-width:900px;margin:0 auto;">
+      <a href="countries/russia.html" style="display:flex;flex-direction:column;align-items:center;padding:20px 12px;background:var(--bg-light);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:transform 0.2s,box-shadow 0.2s;border:1px solid var(--border);text-align:center;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        
+        <div style="font-weight:600;font-size:15px;">Russia</div>
+        <div style="font-size:12px;color:var(--text-gray);margin-top:4px;">Cold-climate plants</div>
+      </a>
+      <a href="countries/kazakhstan.html" style="display:flex;flex-direction:column;align-items:center;padding:20px 12px;background:var(--bg-light);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:transform 0.2s,box-shadow 0.2s;border:1px solid var(--border);text-align:center;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        
+        <div style="font-weight:600;font-size:15px;">Kazakhstan</div>
+        <div style="font-size:12px;color:var(--text-gray);margin-top:4px;">Nurly Zhol projects</div>
+      </a>
+      <a href="countries/uzbekistan.html" style="display:flex;flex-direction:column;align-items:center;padding:20px 12px;background:var(--bg-light);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:transform 0.2s,box-shadow 0.2s;border:1px solid var(--border);text-align:center;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        
+        <div style="font-weight:600;font-size:15px;">Uzbekistan</div>
+        <div style="font-size:12px;color:var(--text-gray);margin-top:4px;">Commercial concrete</div>
+      </a>
+      <a href="countries/nigeria.html" style="display:flex;flex-direction:column;align-items:center;padding:20px 12px;background:var(--bg-light);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:transform 0.2s,box-shadow 0.2s;border:1px solid var(--border);text-align:center;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        
+        <div style="font-weight:600;font-size:15px;">Nigeria</div>
+        <div style="font-size:12px;color:var(--text-gray);margin-top:4px;">Mobile solutions</div>
+      </a>
+      <a href="countries/saudi-arabia.html" style="display:flex;flex-direction:column;align-items:center;padding:20px 12px;background:var(--bg-light);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:transform 0.2s,box-shadow 0.2s;border:1px solid var(--border);text-align:center;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        
+        <div style="font-weight:600;font-size:15px;">Saudi Arabia</div>
+        <div style="font-size:12px;color:var(--text-gray);margin-top:4px;">Vision 2030 mega projects</div>
+      </a>
+      <a href="countries/pakistan.html" style="display:flex;flex-direction:column;align-items:center;padding:20px 12px;background:var(--bg-light);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:transform 0.2s,box-shadow 0.2s;border:1px solid var(--border);text-align:center;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        
+        <div style="font-weight:600;font-size:15px;">Pakistan</div>
+        <div style="font-size:12px;color:var(--text-gray);margin-top:4px;">CPEC infrastructure</div>
+      </a>
+      <a href="countries/kenya.html" style="display:flex;flex-direction:column;align-items:center;padding:20px 12px;background:var(--bg-light);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:transform 0.2s,box-shadow 0.2s;border:1px solid var(--border);text-align:center;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        
+        <div style="font-weight:600;font-size:15px;">Kenya</div>
+        <div style="font-size:12px;color:var(--text-gray);margin-top:4px;">East Africa growth</div>
+      </a>
+    </div>
+    <div style="text-align:center;margin-top:24px;">
+      <a href="countries/" class="btn btn-outline">Ver todos los mercados globales ��</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Models</div>
+      <h2>Full HZS Series Range</h2>
+      <p class="subtitle">From small to mega capacity. Click any model for detailed specifications.</p>
+    </div>
+    <div style="overflow-x:auto;">
+    <table style="width:100%;max-width:750px;margin:0 auto;border-collapse:collapse;">
+      <tr style="background:var(--primary);color:white;"><th style="padding:10px;">Model</th><th style="padding:10px;">Capacity</th><th style="padding:10px;">Mixer</th><th style="padding:10px;">Application</th></tr>
+      <tr style="border-bottom:1px solid var(--border);cursor:pointer;" onclick="window.location='products/hzs25-concrete-batching-plant.html'"><td style="padding:10px;text-align:center;">HZS25</td><td style="padding:10px;text-align:center;">25 m&sup3;/h</td><td style="padding:10px;text-align:center;">JS500</td><td style="padding:10px;">Small construction projects</td></tr>
+      <tr style="border-bottom:1px solid var(--border);background:var(--bg-light);cursor:pointer;" onclick="window.location='products/hzs35-concrete-batching-plant.html'"><td style="padding:10px;text-align:center;">HZS35</td><td style="padding:10px;text-align:center;">35 m&sup3;/h</td><td style="padding:10px;text-align:center;">JS750</td><td style="padding:10px;">Small-medium projects</td></tr>
+      <tr style="border-bottom:1px solid var(--border);cursor:pointer;" onclick="window.location='products/hzs50-concrete-batching-plant.html'"><td style="padding:10px;text-align:center;">HZS50</td><td style="padding:10px;text-align:center;">50 m&sup3;/h</td><td style="padding:10px;text-align:center;">JS1000</td><td style="padding:10px;">Medium projects, precast</td></tr>
+      <tr style="border-bottom:1px solid var(--border);background:var(--bg-light);cursor:pointer;" onclick="window.location='products/hzs60-concrete-batching-plant.html'"><td style="padding:10px;text-align:center;">HZS60</td><td style="padding:10px;text-align:center;">60 m&sup3;/h</td><td style="padding:10px;text-align:center;">JS1000</td><td style="padding:10px;">Commercial construction</td></tr>
+      <tr style="border-bottom:1px solid var(--border);cursor:pointer;" onclick="window.location='products/hzs75-concrete-batching-plant.html'"><td style="padding:10px;text-align:center;">HZS75</td><td style="padding:10px;text-align:center;">75 m&sup3;/h</td><td style="padding:10px;text-align:center;">JS1500</td><td style="padding:10px;">Medium-large projects</td></tr>
+      <tr style="border-bottom:1px solid var(--border);background:var(--bg-light);cursor:pointer;" onclick="window.location='products/hzs90-concrete-batching-plant.html'"><td style="padding:10px;text-align:center;">HZS90</td><td style="padding:10px;text-align:center;">90 m&sup3;/h</td><td style="padding:10px;text-align:center;">JS1500</td><td style="padding:10px;">Medium-large, commercial concrete</td></tr>
+      <tr style="border-bottom:1px solid var(--border);cursor:pointer;" onclick="window.location='products/hzs120-concrete-batching-plant.html'"><td style="padding:10px;text-align:center;">HZS120</td><td style="padding:10px;text-align:center;">120 m&sup3;/h</td><td style="padding:10px;text-align:center;">JS2000</td><td style="padding:10px;">Roads, bridges, ready-mix supply</td></tr>
+      <tr style="border-bottom:1px solid var(--border);background:var(--bg-light);cursor:pointer;" onclick="window.location='products/hzs180-concrete-batching-plant.html'"><td style="padding:10px;text-align:center;">HZS180</td><td style="padding:10px;text-align:center;">180 m&sup3;/h</td><td style="padding:10px;text-align:center;">JS3000</td><td style="padding:10px;">Large infrastructure projects</td></tr>
+      <tr style="border-bottom:1px solid var(--border);cursor:pointer;" onclick="window.location='products/hzs240-concrete-batching-plant.html'"><td style="padding:10px;text-align:center;">HZS240</td><td style="padding:10px;text-align:center;">240 m&sup3;/h</td><td style="padding:10px;text-align:center;">JS4000</td><td style="padding:10px;">Large-scale commercial concrete</td></tr>
+      <tr style="border-bottom:1px solid var(--border);background:var(--bg-light);cursor:pointer;" onclick="window.location='products/double-hzs240-concrete-plant.html'"><td style="padding:10px;text-align:center;">Double HZS240</td><td style="padding:10px;text-align:center;">480 m&sup3;/h</td><td style="padding:10px;text-align:center;">JS4000 x 2</td><td style="padding:10px;">Mega infrastructure projects</td></tr>
+    </table>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Projects</div>
+      <h2>Confiado Mundialmente</h2>
+      <p class="subtitle">Recent deliveries and ongoing installations across global markets.</p>
+    </div>
+    <div class="project-grid">
+      <a href="projects/" class="project-card">
+        <div class="project-img" style="padding:0;overflow:hidden;"><img src="../assets/images/company/project-russia.jpg" alt="Russia HZS120 concrete batching plant project" style="width:100%;height:180px;object-fit:cover;display:block;"></div>
+        <div class="project-body"><span class="tag">2026</span><h3>Proyecto Rusia</h3><div class="project-details"><span>HZS120 Concrete Plant</span><span>Contract signed July 2026</span></div></div>
+      </a>
+      <a href="projects/" class="project-card">
+        <div class="project-img" style="padding:0;overflow:hidden;"><img src="../assets/images/company/project-mongolia.jpg" alt="Inner Mongolia HZS120 concrete plant project" style="width:100%;height:180px;object-fit:cover;display:block;"></div>
+        <div class="project-body"><span class="tag">2026</span><h3>Inner Mongolia, China</h3><div class="project-details"><span>HZS120 Concrete Plant</span><span>Operational since April 2026</span></div></div>
+      </a>
+      <a href="projects/" class="project-card">
+        <div class="project-img" style="padding:0;overflow:hidden;"><img src="../assets/images/company/project-xinjiang.jpg" alt="Xinjiang HZS60 concrete plant project" style="width:100%;height:180px;object-fit:cover;display:block;"></div>
+        <div class="project-body"><span class="tag">2025</span><h3>Xinjiang, China</h3><div class="project-details"><span>HZS60 Concrete Plant</span><span>Operational since August 2025</span></div></div>
+      </a>
+    </div>
+    <div style="text-align:center;margin-top:20px;">
+      <a href="projects/" class="btn btn-outline">Ver Todos los Proyectos</a>
+    </div>
+  </div>
+</section>
+
+<section class="company-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Factory Strength</div>
+      <h2>Factory Strength &amp; Manufacturing Capability</h2>
+      <p class="subtitle">40,000 m² production base with advanced equipment and professional teams.</p>
+    </div>
+    <div class="image-grid-4col" style="margin-bottom:16px;">
+      <img src="../assets/images/company/factory-01.jpg" alt="YudaHualong factory production workshop" class="grid-img">
+      <img src="../assets/images/company/factory-02.jpg" alt="YudaHualong production line" class="grid-img">
+      <img src="../assets/images/company/factory-03.jpg" alt="YudaHualong factory workshop" class="grid-img">
+      <img src="../assets/images/company/factory-04.jpg" alt="YudaHualong production facility" class="grid-img">
+      <img src="../assets/images/company/factory-05.jpg" alt="YudaHualong manufacturing" class="grid-img">
+      <img src="../assets/images/company/factory-06.jpg" alt="YudaHualong R&D center" class="grid-img">
+      <img src="../assets/images/company/factory-07.jpg" alt="YudaHualong showroom" class="grid-img">
+      <img src="../assets/images/company/factory-08.jpg" alt="YudaHualong office area" class="grid-img">
+    </div>
+    <div style="text-align:center;">
+      <a href="company/factory.html" class="btn btn-outline">Visita completa a la fábrica</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Certifications</div>
+      <h2>Quality Certifications &amp; Awards</h2>
+      <p class="subtitle">Certified quality management system and international business recognition. CE, ISO 9001, utility patents, and Alibaba Gold Supplier verified.</p>
+    </div>
+    <div class="image-grid-4col" style="margin-bottom:16px;">
+      <img src="../assets/images/company/cert-01.jpg" alt="YudaHualong certificate 1" class="grid-img">
+      <img src="../assets/images/company/cert-02.jpg" alt="YudaHualong certificate 2" class="grid-img">
+      <img src="../assets/images/company/cert-03.jpg" alt="YudaHualong certificate 3" class="grid-img">
+      <img src="../assets/images/company/cert-04.jpg" alt="YudaHualong certificate 4" class="grid-img">
+      <img src="../assets/images/company/cert-05.jpg" alt="YudaHualong certificate 5" class="grid-img">
+      <img src="../assets/images/company/cert-06.jpg" alt="YudaHualong company award 1" class="grid-img">
+      <img src="../assets/images/company/cert-07.jpg" alt="YudaHualong company award 2" class="grid-img">
+      <img src="../assets/images/company/cert-08.jpg" alt="YudaHualong company award 3" class="grid-img">
+    </div>
+    <div style="text-align:center;">
+      <a href="company/certificates.html" class="btn btn-outline">Ver todas las certificaciones</a>
+    </div>
+  </div>
+</section>
+
+<section class="company-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Global Customers</div>
+      <h2>Trusted By Global Partners</h2>
+      <p class="subtitle">YudaHualong welcomes global customers for factory visits, technical exchange, and partnership building.</p>
+    </div>
+    <div class="image-grid-4col" style="margin-bottom:16px;">
+      <img src="../assets/images/company/visit-01.jpg" alt="International customer visiting YudaHualong factory" class="grid-img">
+      <img src="../assets/images/company/visit-02.jpg" alt="Customer factory visit at YudaHualong" class="grid-img">
+      <img src="../assets/images/company/visit-03.jpg" alt="Foreign customer at YudaHualong" class="grid-img">
+      <img src="../assets/images/company/visit-04.jpg" alt="Customer technical visit" class="grid-img">
+      <img src="../assets/images/company/visit-05.jpg" alt="International business meeting" class="grid-img">
+      <img src="../assets/images/company/visit-06.jpg" alt="Customer factory tour" class="grid-img">
+      <img src="../assets/images/company/visit-08.jpg" alt="Customer visit gallery" class="grid-img">
+      <img src="../assets/images/company/visit-09.jpg" alt="Contract signing ceremony with Russian customer" class="grid-img">
+    </div>
+    <div style="text-align:center;">
+      <a href="company/customer-visits.html" class="btn btn-outline">Ver todas las visitas de clientes</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">FAQ</div>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">¿Cuánto cuesta una planta de hormigón?<span class="faq-q-icon">+</span></div><div class="faq-a">Price depends on capacity, configuration, and automation level. Contact us with your project requirements for a detailed factory-direct quotation.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Do you provide installation service?<span class="faq-q-icon">+</span></div><div class="faq-a">Yes. Ofrecemos orientación completa de instalación y soporte de puesta en marcha in situ. Nuestro equipo técnico puede viajar a su proyecto for smooth setup and operation.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What countries do you export to?<span class="faq-q-icon">+</span></div><div class="faq-a">We export to Russia, Kazakhstan, Uzbekistan, Nigeria, Pakistan, Kenya, Saudi Arabia, Vietnam, and more. We handle international logistics, customs clearance, and documentation.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What is the delivery time?<span class="faq-q-icon">+</span></div><div class="faq-a">Standard production takes 15-30 days depending on the model. Shipping to Central Asia typically takes 12-18 days by rail. Sea freight to Africa and Middle East available.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Do you offer after-sales support?<span class="faq-q-icon">+</span></div><div class="faq-a">Yes. Lifetime spare parts supply and 24/7 remote technical support are included. Available by phone and email for urgent inquiries.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to Start Your Project?</h2>
+    <p>Tell us your requirements for a tailored solution within 24 hours.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="contact.html" class="btn btn-primary">Obtener cotización de fábrica</a>
+      <a href="tel:+8618638788818" class="btn btn-primary">Teléfono: +86 18638788818</a>
+    </div>
+  </div>
+</section>
 <footer class="footer"><div class="container"><div class="footer-grid">
-  <div><h4>YUDA HUALONG</h4><p style="font-size:13px;color:var(--text-gray);">Fabricante profesional de plantas de hormigón en Zhengzhou, China.</p></div>
-  <div><h4>Productos</h4><ul style="list-style:none;font-size:13px;line-height:2;"><li><a href="/es/products/hzs-concrete-batching-plant.html" style="color:var(--text-gray);text-decoration:none;">Serie HZS</a></li><li><a href="/es/products/mobile-concrete-batching-plant.html" style="color:var(--text-gray);text-decoration:none;">Plantas Móviles</a></li><li><a href="/es/products/concrete-mixer.html" style="color:var(--text-gray);text-decoration:none;">Mezcladoras JS</a></li></ul></div>
-  <div><h4>Contacto</h4><ul style="list-style:none;font-size:13px;line-height:2;color:var(--text-gray);"><li>Tel/WhatsApp: +86 18638788818</li><li>Email: 18638788818@163.com</li></ul></div>
-</div><div class="footer-bottom">© 2026 YUDA HUALONG. Todos los derechos reservados.</div></div></footer>
-</body></html>
+  <div class="footer-brand"><h3>YUDA HUALONG</h3><p>Fabricante profesional de plantas de hormigón. Directo de fábrica desde Zhengzhou, China.</p><p style="margin-top:12px;">Tel: +86 18638788818</p></div>
+  <div><h4>Productos</h4><ul><li><a href="/es/products/hzs-concrete-batching-plant.html">Serie HZS</a></li><li><a href="/es/products/mobile-concrete-batching-plant.html">Plantas Móviles</a></li><li><a href="/es/products/concrete-mixer.html">Mezcladora</a></li><li><a href="/es/products/concrete-batching-plant.html">Todos los Productos</a></li></ul></div>
+  <div><h4>Empresa</h4><ul><li><a href="/es/about.html">Sobre YUDA</a></li><li><a href="/es/company/factory.html">Fábrica</a></li><li><a href="/es/company/certificates.html">Certificaciones</a></li><li><a href="/es/company/customer-visits.html">Visitas de Clientes</a></li>
+      <li><a href="/es/countries/">Mercados Globales</a></li></ul></div>
+  <div><h4>Soporte</h4><ul><li><a href="/es/contact.html">Contacto</a></li><li><a href="/es/faq.html">Preguntas frecuentes</a></li></ul></div>
+</div><div class="footer-bottom">&copy; 2026 YUDA HUALONG. Todos los derechos reservados. | Zhengzhou, Henan, China</div></div></footer>
+<script>
+
+document.addEventListener('click', function(e) { if(!e.target.closest('.language-switcher');
+</script>
+</body>
+</html>
+
+
+

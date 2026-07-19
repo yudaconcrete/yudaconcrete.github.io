@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="fr"><head>
+﻿<!DOCTYPE html><html lang="fr"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Centrale à Béton Mobile sur Remorque | YUDA HUALONG</title>
 <meta name="description" content="Trailer centrale à béton mobile with drum mixer. 1200L feeding, 750L discharging. Quick installation, truck-towable. Ideal for road construction and remote projects.">
@@ -7,41 +7,104 @@
 <link rel="stylesheet" href="../../assets/css/style.css">
 
 <style>
-.nav-lang { position: relative; }
-.lang-dropdown { display: none; position: absolute; top: 100%; right: 0; background: white; box-shadow: 0 2px 12px rgba(0,0,0,0.15); border-radius: 8px; min-width: 160px; z-index: 1000; padding: 8px 0; list-style: none; }
-.lang-dropdown li { padding: 0; }
-.lang-dropdown a { display: block; padding: 8px 16px; color: var(--text); text-decoration: none; font-size: 14px; white-space: nowrap; }
-.lang-dropdown a:hover { background: var(--bg-light); }
-.nav-lang:hover .lang-dropdown { display: block; }
-</style>
-<!-- lang-switcher-added -->
-<link rel="alternate" hreflang="en" href="https://yudaconcrete.github.io/products/trailer-mobile-concrete-plant.html">
-<link rel="alternate" hreflang="ru" href="https://yudaconcrete.github.io/ru/products/trailer-mobile-concrete-plant.html">
-<link rel="alternate" hreflang="x-default" href="https://yudaconcrete.github.io/">
 
-<link rel="alternate" hreflang="fr" href="https://yudaconcrete.github.io/fr/products/trailer-mobile-concrete-plant.html">
-</head><body>
-<nav class="nav"><div class="nav-inner"><a href="/" class="nav-logo"><h1>YUDA</h1><span>Centrales à Béton</span></a>
-<ul class="nav-links">
-      <li><a href="../../">Accueil</a></li>
-      <li><a href="../../products/concrete-batching-plant.html">Produits</a></li>
-      <li><a href="../../products/hzs-concrete-batching-plant.html">Série HZS</a></li>
-      <li><a href="../../products/mobile-concrete-batching-plant.html">Centrale Mobile</a></li>
-      <li><a href="../../about.html">À Propos</a></li>
-      <li><a href="../../countries/">Marchés Mondiaux</a></li>
-      <li><a href="../../projects/">Projects</a></li>
-      <li><a href="../../contact.html" class="nav-cta">Demander un Devis</a></li>
-          <li class="nav-lang"><a href="javascript:void(0)" onclick="toggleLang()">[🌐] Français ▼</a>
-        <ul class="lang-dropdown">
-          <li><a href="/">[EN] English</a></li>
-          <li><a href="/ru/">[RU] Русский</a></li>
-          <li><a href="/ar/">[AR] العربية</a></li>
-          <li><a href="/es/">[ES] Español</a></li>
-          <li><a href="/fr/">[FR] Français</a></li>
-          <li><a href="/pt/">[PT] Português</a></li>
+
+
+
+
+
+
+/* Language switcher */
+.language-switcher {
+    position: relative;
+    display: inline-block;
+}
+.language-btn {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.language-btn:hover {
+    background: #e8f2ff;
+}
+.language-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 5px;
+    background: white;
+    min-width: 180px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 9999;
+    padding: 4px 0;
+}
+.language-dropdown a {
+    display: block;
+    padding: 10px 14px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+.language-dropdown a:hover {
+    background: #f0f6ff;
+    color: #e63946;
+}
+.language-switcher:hover .language-dropdown,
+.language-switcher.active .language-dropdown {
+    display: block;
+}
+
+</style>
+<link rel="alternate" hreflang="en" href="https://yudaconcrete.github.io/index.html">
+<link rel="alternate" hreflang="ru" href="https://yudaconcrete.github.io/ru/index.html">
+<link rel="alternate" hreflang="ar" href="https://yudaconcrete.github.io/ar/index.html">
+<link rel="alternate" hreflang="es" href="https://yudaconcrete.github.io/es/index.html">
+<link rel="alternate" hreflang="fr" href="https://yudaconcrete.github.io/fr/index.html">
+<link rel="alternate" hreflang="pt" href="https://yudaconcrete.github.io/pt/index.html">
+<link rel="alternate" hreflang="kk" href="https://yudaconcrete.github.io/kz/index.html">
+<link rel="alternate" hreflang="uz" href="https://yudaconcrete.github.io/uz/index.html">
+<link rel="alternate" hreflang="ky" href="https://yudaconcrete.github.io/kg/index.html">
+<link rel="alternate" hreflang="tg" href="https://yudaconcrete.github.io/tj/index.html">
+<link rel="alternate" hreflang="tk" href="https://yudaconcrete.github.io/tm/index.html">
+<link rel="alternate" hreflang="x-default" href="https://yudaconcrete.github.io/index.html">
+
+    <link rel="canonical" href="https://yudaconcrete.github.io/fr/products/trailer-mobile-concrete-plant.html">
+</head>><body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/fr/" class="nav-logo"><h1>YudaHualong</h1><span>Concrete Batching Plant Solutions</span></a>
+    <div class="mobile-toggle" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('active')"><span></span><span></span><span></span></div>
+    <ul class="nav-links">
+      <li><a href="/fr/">Accueil</a></li>
+      <li><a href="/fr/products/concrete-batching-plant.html">Produits</a></li>
+      <li><a href="/fr/products/hzs-concrete-batching-plant.html">Série HZS</a></li>
+      <li><a href="/fr/products/mobile-concrete-batching-plant.html">Mobile</a></li>
+      <li><a href="/fr/about.html">À Propos</a></li>
+      <li><a href="/fr/countries/">Marchés</a></li>
+      <li><a href="/fr/contact.html" class="nav-cta">Contact</a></li>
+      <li class="language-switcher">
+            <button class="language-btn" onclick="this.parentElement.classList.toggle('active')">🌐 Français ▾</button>
+            <div class="language-dropdown">
+                <a href="/">English</a>
+                <a href="/ru/">Русский</a>
+                <a href="/ar/">العربية</a>
+                <a href="/es/">Español</a>
+                <a href="/fr/">Français</a>
+                <a href="/pt/">Português</a>
+            </div>
+          </li>
         </ul>
-      </li>
-    </ul></div></nav>
+  </div>
+</nav>
 <section class="page-header"><div class="container">
 <h1>Trailer Centrale Mobile</h1>
 <p>Drum type trailer mobile concrete plant for flexible construction operations</p>
@@ -118,15 +181,15 @@ The YUDA trailer mobile concrete plant is a compact, towable concrete production
     <th style="padding:10px 16px;text-align:left;">Specification</th><th style="padding:10px 16px;text-align:center;">Data</th>
   </tr>
   <tr style="background:#f8f9fa;"><td style="padding:8px 16px;font-weight:600;">Mixer Type</td><td style="padding:8px 16px;text-align:center;">Self-Falling Drum Mixer</td></tr>
-  <tr><td style="padding:8px 16px;font-weight:600;">Rated Feeding Capacity</td><td style="padding:8px 16px;text-align:center;">1200L</td></tr>
-  <tr style="background:#f8f9fa;"><td style="padding:8px 16px;font-weight:600;">Rated Discharging Capacity</td><td style="padding:8px 16px;text-align:center;">750L (0.75m³)</td></tr>
-  <tr><td style="padding:8px 16px;font-weight:600;">Production Capacity</td><td style="padding:8px 16px;text-align:center;">≥20m³/h</td></tr>
+  <tr><td style="padding:8px 16px;font-weight:600;">Rated Feeding Capacité</td><td style="padding:8px 16px;text-align:center;">1200L</td></tr>
+  <tr style="background:#f8f9fa;"><td style="padding:8px 16px;font-weight:600;">Rated Discharging Capacité</td><td style="padding:8px 16px;text-align:center;">750L (0.75m³)</td></tr>
+  <tr><td style="padding:8px 16px;font-weight:600;">Production Capacité</td><td style="padding:8px 16px;text-align:center;">≥20m³/h</td></tr>
   <tr style="background:#f8f9fa;"><td style="padding:8px 16px;font-weight:600;">Mixer Power</td><td style="padding:8px 16px;text-align:center;">30KW</td></tr>
-  <tr><td style="padding:8px 16px;font-weight:600;">Aggregate Bin Capacity</td><td style="padding:8px 16px;text-align:center;">3 × 6m³</td></tr>
-  <tr style="background:#f8f9fa;"><td style="padding:8px 16px;font-weight:600;">Cement Silo Capacity</td><td style="padding:8px 16px;text-align:center;">20T / 30T (optional)</td></tr>
-  <tr><td style="padding:8px 16px;font-weight:600;">Weighing Accuracy</td><td style="padding:8px 16px;text-align:center;">Aggregate: ±2%, Cement: ±1%, Water: ±1%</td></tr>
+  <tr><td style="padding:8px 16px;font-weight:600;">Aggregate Bin Capacité</td><td style="padding:8px 16px;text-align:center;">3 × 6m³</td></tr>
+  <tr style="background:#f8f9fa;"><td style="padding:8px 16px;font-weight:600;">Cement Silo Capacité</td><td style="padding:8px 16px;text-align:center;">20T / 30T (optional)</td></tr>
+  <tr><td style="padding:8px 16px;font-weight:600;">Précision de Pesage</td><td style="padding:8px 16px;text-align:center;">Aggregate: ±2%, Cement: ±1%, Water: ±1%</td></tr>
   <tr style="background:#f8f9fa;"><td style="padding:8px 16px;font-weight:600;">Control System</td><td style="padding:8px 16px;text-align:center;">PLC + Manual Override</td></tr>
-  <tr><td style="padding:8px 16px;font-weight:600;">Total Power</td><td style="padding:8px 16px;text-align:center;">≈45KW</td></tr>
+  <tr><td style="padding:8px 16px;font-weight:600;">Puissance Totale</td><td style="padding:8px 16px;text-align:center;">≈45KW</td></tr>
   <tr style="background:#f8f9fa;"><td style="padding:8px 16px;font-weight:600;">Discharge Height</td><td style="padding:8px 16px;text-align:center;">3.5m</td></tr>
   <tr><td style="padding:8px 16px;font-weight:600;">Transport Dimensions (L×W×H)</td><td style="padding:8px 16px;text-align:center;">10m × 2.3m × 2.8m</td></tr>
   <tr style="background:#f8f9fa;"><td style="padding:8px 16px;font-weight:600;">Towing Speed</td><td style="padding:8px 16px;text-align:center;">≤60 km/h on paved roads</td></tr>
@@ -169,7 +232,7 @@ YUDA offers two types of mobile concrete plants. Which one is right for your pro
   <p style="color:var(--text-gray);font-size:14px;">No. A standard truck, tractor, or heavy SUV can tow the unit on paved roads up to 60 km/h. No special license or permit required for most regions.</p>
 </div>
 <div style="background:var(--bg-light);border-radius:var(--radius);padding:20px;margin-bottom:12px;">
-  <h3 style="font-size:16px;margin-bottom:6px;">How long does it take to set up on site?</h3>
+  <h3 style="font-size:16px;margin-bottom:6px;">Combien de temps pour l'installation sur site?</h3>
   <p style="color:var(--text-gray);font-size:14px;">Usually 2-4 hours. Level the ground, disconnect the tow vehicle, connect power and water, and the plant is ready.</p>
 </div>
 <div style="background:var(--bg-light);border-radius:var(--radius);padding:20px;margin-bottom:12px;">
@@ -195,12 +258,13 @@ YUDA offers two types of mobile concrete plants. Which one is right for your pro
   <div><h4>Produits</h4><ul><li><a href="../../products/hzs-concrete-batching-plant.html">Centrales HZS</a></li><li><a href="../../products/mobile-concrete-batching-plant.html">Centrale Mobile</a></li><li><a href="../../products/concrete-mixer.html">Malaxeur à Béton</a></li><li><a href="../../products/concrete-batching-plant.html">All Produits</a></li></ul></div>
   <div><h4>Entreprise</h4><ul><li><a href="../../about.html">About YUDA</a></li><li><a href="../../company/factory.html">Usine</a></li><li><a href="../../company/certificates.html">Certifications</a></li><li><a href="../../company/customer-visits.html">Visites Clients</a></li>
       <li><a href="../../countries/">Marchés Mondiaux</a></li></ul></div>
-  <div><h4>Support</h4><ul><li><a href="../../contact.html">Contact</a></li><li><a href="../../faq.html">FAQ</a></li><li><a href="../../projects/">Projects</a></li></ul></div>
+  <div><h4>Support</h4><ul><li><a href="../../contact.html">Contact</a></li><li><a href="../../faq.html">Questions fréquentes</a></li><li><a href="../../projects/">Projects</a></li></ul></div>
 </div><div class="footer-bottom">&copy; 2026 YUDA HUALONG. All rights reserved. | Zhengzhou, Henan, China</div></div></footer>
 <script>
-function toggleLang() { document.querySelector('.lang-dropdown').classList.toggle('show'); }
-document.addEventListener('click', function(e) { if(!e.target.closest('.nav-lang')) document.querySelector('.lang-dropdown')?.classList.remove('show'); });
+
+);
 </script>
 </body></html>
+
 
 

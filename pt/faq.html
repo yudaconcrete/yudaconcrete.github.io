@@ -1,70 +1,126 @@
-<!DOCTYPE html><html lang="pt"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FAQ | YUDA HUALONG</title>
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ | YUDA HUALONG Usinas de Concreto</title>
 <meta name="description" content="Perguntas frequentes sobre usinas de concreto YUDA HUALONG.">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css">
-<style>.nav-lang{position:relative}.lang-dropdown{display:none;position:absolute;top:100%;right:0;background:white;box-shadow:0 2px 12px rgba(0,0,0,0.15);border-radius:8px;min-width:160px;z-index:1000;padding:8px 0;list-style:none}.lang-dropdown li{padding:0}.lang-dropdown a{display:block;padding:8px 16px;color:var(--text);text-decoration:none;font-size:14px;white-space:nowrap}.lang-dropdown a:hover{background:var(--bg-light)}.nav-lang:hover .lang-dropdown{display:block}</style>
-</head><body>
-<nav class="nav"><div class="nav-inner"><a href="/pt/" class="nav-logo"><h1>YUDA HUALONG</h1><span>Usinas de Concreto</span></a>
-<ul class="nav-links">
-<li><a href="../">Início</a></li>
-<li><a href="../">Produtos</a></li>
-<li><a href="../">Série HZS</a></li>
-<li><a href="../">Usina Móvel</a></li>
-<li><a href="../">Sobre Nós</a></li>
-<li><a href="../">Mercados Globais</a></li>
-<li><a href="../">Solicitar Orçamento</a></li>
-<li class="nav-lang"><a href="javascript:void(0)" onclick="toggleLang()">[&#127760;] Português &#9660;</a>
-<ul class="lang-dropdown">
-<li><a href="/">[EN] English</a></li>
-<li><a href="/ru/">[RU] Русский</a></li>
-<li><a href="/ar/">[AR] العربية</a></li>
-<li><a href="/es/">[ES] Español</a></li>
-<li><a href="/fr/">[FR] Français</a></li>
-<li><a href="/pt/">[PT] Português</a></li>
-</ul></li></ul></div></nav>
-<section class="page-header"><div class="container"><h1>Perguntas Frequentes</h1><p>Perguntas comuns sobre nossas usinas e serviços.</p></div></section>
-<section class="section"><div class="container" style="max-width:860px;margin:0 auto;">
-<div style="margin-bottom:20px;padding:20px;background:var(--bg-light);border-radius:var(--radius);">
-<h3 style="margin-bottom:8px;">1. Quais tipos de usinas de concreto vocês oferecem?</h3>
-<p style="color:var(--text-gray);">Oferecemos usinas fixas HZS (25-240 m³/h), usinas móveis e sobre reboque.</p>
-</div>
-<div style="margin-bottom:20px;padding:20px;background:var(--bg-light);border-radius:var(--radius);">
-<h3 style="margin-bottom:8px;">2. Qual é a capacidade de produção?</h3>
-<p style="color:var(--text-gray);">De HZS25 (25 m³/h) a HZS240 (240 m³/h) e Dupla HZS240 (480 m³/h).</p>
-</div>
-<div style="margin-bottom:20px;padding:20px;background:var(--bg-light);border-radius:var(--radius);">
-<h3 style="margin-bottom:8px;">3. Vocês exportam?</h3>
-<p style="color:var(--text-gray);">Sim, para Ásia Central, África, Oriente Médio, América do Sul e Europa.</p>
-</div>
-<div style="margin-bottom:20px;padding:20px;background:var(--bg-light);border-radius:var(--radius);">
-<h3 style="margin-bottom:8px;">4. Quais certificações vocês têm?</h3>
-<p style="color:var(--text-gray);">CE, ISO 9001, patentes de utilidade, Alibaba Gold Supplier.</p>
-</div>
-<div style="margin-bottom:20px;padding:20px;background:var(--bg-light);border-radius:var(--radius);">
-<h3 style="margin-bottom:8px;">5. Qual o prazo de entrega?</h3>
-<p style="color:var(--text-gray);">Geralmente 15-30 dias conforme modelo e quantidade.</p>
-</div>
-<div style="margin-bottom:20px;padding:20px;background:var(--bg-light);border-radius:var(--radius);">
-<h3 style="margin-bottom:8px;">6. Vocês oferecem instalação?</h3>
-<p style="color:var(--text-gray);">Sim, fornecemos engenheiros para instalação e treinamento.</p>
-</div>
-<div style="margin-bottom:20px;padding:20px;background:var(--bg-light);border-radius:var(--radius);">
-<h3 style="margin-bottom:8px;">7. Qual o período de garantia?</h3>
-<p style="color:var(--text-gray);">12 meses a partir do comissionamento.</p>
-</div>
-<div style="margin-bottom:20px;padding:20px;background:var(--bg-light);border-radius:var(--radius);">
-<h3 style="margin-bottom:8px;">8. Posso visitar a fábrica?</h3>
-<p style="color:var(--text-gray);">Sim! Bem-vindo a Zhengzhou.</p>
+<link rel="stylesheet" href="../../assets/css/style.css">
+<style>
+
+
+
+
+
+
+
+/* Language switcher */
+.language-switcher {
+    position: relative;
+    display: inline-block;
+}
+.language-btn {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.language-btn:hover {
+    background: #e8f2ff;
+}
+.language-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 5px;
+    background: white;
+    min-width: 180px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 9999;
+    padding: 4px 0;
+}
+.language-dropdown a {
+    display: block;
+    padding: 10px 14px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+.language-dropdown a:hover {
+    background: #f0f6ff;
+    color: #e63946;
+}
+.language-switcher:hover .language-dropdown,
+.language-switcher.active .language-dropdown {
+    display: block;
+}
+
+</style>
+<link rel="alternate" hreflang="en" href="https://yudaconcrete.github.io/faq.html">
+<link rel="alternate" hreflang="ru" href="https://yudaconcrete.github.io/ru/faq.html">
+<link rel="alternate" hreflang="pt" href="https://yudaconcrete.github.io/pt/faq.html">
+<link rel="alternate" hreflang="x-default" href="https://yudaconcrete.github.io/">
+
+    <link rel="canonical" href="https://yudaconcrete.github.io/pt/faq.html">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/pt/" class="nav-logo"><h1>YudaHualong</h1><span>Concrete Batching Plant Solutions</span></a>
+    <div class="mobile-toggle" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('active')"><span></span><span></span><span></span></div>
+    <ul class="nav-links">
+      <li><a href="/pt/">Início</a></li>
+      <li><a href="/pt/products/concrete-batching-plant.html">Produtos</a></li>
+      <li><a href="/pt/products/hzs-concrete-batching-plant.html">Série HZS</a></li>
+      <li><a href="/pt/products/mobile-concrete-batching-plant.html">Móvel</a></li>
+      <li><a href="/pt/about.html">Sobre Nós</a></li>
+      <li><a href="/pt/countries/">Mercados</a></li>
+      <li><a href="/pt/contact.html" class="nav-cta">Contato</a></li>
+      <li class="language-switcher">
+            <button class="language-btn" onclick="this.parentElement.classList.toggle('active')">🌐 Português ▾</button>
+            <div class="language-dropdown">
+                <a href="/">English</a>
+                <a href="/ru/">Русский</a>
+                <a href="/ar/">العربية</a>
+                <a href="/es/">Español</a>
+                <a href="/fr/">Français</a>
+                <a href="/pt/">Português</a>
+            </div>
+          </li>
+        </ul>
+  </div>
+</nav>
+<section class="page-header"><div class="container"><h1>�?Frequently Asked Questions</h1></div></section>
+<section class="section"><div class="container" style="max-width:800px;margin:0 auto;">
+<div class="faq-list">
+<div class="faq-item open"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How much does a concrete batching plant cost?<span class="faq-q-icon">+</span></div><div class="faq-a">Price depends on capacity, configuration, and automation level. A basic HZS60 starts around. Contact us with your requirements for a detailed factory-direct quotation.</div></div>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Do you provide installation service?<span class="faq-q-icon">+</span></div><div class="faq-a">Yes. We offer full installation guidance and on-site commissioning support. Our technical team can travel to your project site to ensure smooth setup and operation.</div></div>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What countries do you export to?<span class="faq-q-icon">+</span></div><div class="faq-a">We have successfully exported to Russia, Nigeria, Pakistan, Kenya, Saudi Arabia, Vietnam, and multiple other countries. We handle international logistics, customs clearance, and documentation.</div></div>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How long does production and delivery take?<span class="faq-q-icon">+</span></div><div class="faq-a">Standard production takes 15-30 days depending on the model. Shipping to Central Asia typically takes 12-18 days by rail.</div></div>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Do you offer after-sales support and spare parts?<span class="faq-q-icon">+</span></div><div class="faq-a">Yes. Lifetime spare parts supply and remote technical support are included. Available 24/7 via phone and email.</div></div>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What's the difference between mobile and stationary plants?<span class="faq-q-icon">+</span></div><div class="faq-a">Mobile plants require no foundation and can be relocated easily &mdash;?ideal for road projects and short-term sites. Stationary plants offer higher capacity and are best for permanent commercial concrete production.</div></div>
 </div>
 </div></section>
 <footer class="footer"><div class="container"><div class="footer-grid">
-<div class="footer-brand"><h3>YUDA HUALONG</h3><p>Fabricante profissional de usinas de concreto. Direto da fábrica, Zhengzhou, China.</p><p style="margin-top:12px;">Tel: +86 18638788818</p></div>
-<div><h4>Produtos</h4><ul><li><a href="../products/hzs-concrete-batching-plant.html">Usinas HZS</a></li><li><a href="../products/mobile-concrete-batching-plant.html">Usina Móvel</a></li><li><a href="../products/concrete-mixer.html">Misturador de Concreto</a></li><li><a href="../products/concrete-batching-plant.html">Todos os Produtos</a></li></ul></div>
-<div><h4>Empresa</h4><ul><li><a href="../about.html">Sobre a YUDA</a></li><li><a href="../company/factory.html">Fábrica</a></li><li><a href="../company/certificates.html">Certificações</a></li><li><a href="../company/customer-visits.html">Visitas de Clientes</a></li><li><a href="../countries/">Mercados Globais</a></li></ul></div>
-<div><h4>Suporte</h4><ul><li><a href="../contact.html">Contato</a></li><li><a href="../faq.html">FAQ</a></li></ul></div>
-</div><div class="footer-bottom">© 2026 YUDA HUALONG. Todos os direitos reservados. | Zhengzhou, Henan, China</div></div></footer>
-<script>function toggleLang(){document.querySelector('.lang-dropdown').classList.toggle('show');}document.addEventListener('click',function(e){if(!e.target.closest('.nav-lang'))document.querySelector('.lang-dropdown')?.classList.remove('show');});</script>
-</body></html>
+  <div class="footer-brand"><h3>YUDA HUALONG</h3><p>Fabricante profissional de usinas de concreto. Direto da fábrica em Zhengzhou, China.</p><p style="margin-top:12px;">Tel: +86 18638788818</p></div>
+  <div><h4>Produtos</h4><ul><li><a href="/pt/products/hzs-concrete-batching-plant.html">Usinas HZS</a></li><li><a href="/pt/products/mobile-concrete-batching-plant.html">Usina Móvel</a></li><li><a href="/pt/products/concrete-mixer.html">Misturador</a></li><li><a href="/pt/products/concrete-batching-plant.html">Todos os Produtos</a></li></ul></div>
+  <div><h4>Empresa</h4><ul><li><a href="/pt/about.html">Sobre a YUDA</a></li><li><a href="/pt/company/factory.html">Fábrica</a></li><li><a href="/pt/company/certificates.html">Certificações</a></li><li><a href="/pt/company/customer-visits.html">Visitas de Clientes</a></li>
+      <li><a href="/pt/countries/">Mercados Globais</a></li></ul></div>
+  <div><h4>Suporte</h4><ul><li><a href="/pt/contact.html">Contato</a></li><li><a href="/pt/faq.html">Perguntas frequentes</a></li></ul></div>
+</div><div class="footer-bottom">&copy; 2026 YUDA HUALONG. Todos os direitos reservados. | Zhengzhou, Henan, China</div></div></footer>
+<script>
+
+);
+</script>
+</body>
+</html>

@@ -6,47 +6,106 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-  {"@type":"Question","name":"How much does a concrete batching plant cost?","acceptedAnswer":{"@type":"Answer","text":"Price depends on capacity, configuration, and automation level. Contact us for a detailed quotation."}},
-  {"@type":"Question","name":"Do you provide installation service?","acceptedAnswer":{"@type":"Answer","text":"Yes. We offer installation guidance and on-site commissioning support."}},
+  {"@type":"Question","name":"Сколько стоит бетонный завод?","acceptedAnswer":{"@type":"Answer","text":"Price depends on capacity, configuration, and automation level. Contact us for a detailed quotation."}},
+  {"@type":"Question","name":"Предоставляете ли вы услуги по установке?","acceptedAnswer":{"@type":"Answer","text":"Yes. We offer installation guidance and on-site commissioning support."}},
   {"@type":"Question","name":"What countries do you export to?","acceptedAnswer":{"@type":"Answer","text":"We export to Russia, Kazakhstan, Uzbekistan, Nigeria, Pakistan, Kenya, Saudi Arabia, Vietnam, and more."}}
 ]}</script>
 
 <style>
-.nav-lang { position: relative; }
-.lang-dropdown { display: none; position: absolute; top: 100%; right: 0; background: white; box-shadow: 0 2px 12px rgba(0,0,0,0.15); border-radius: 8px; min-width: 160px; z-index: 1000; padding: 8px 0; list-style: none; }
-.lang-dropdown li { padding: 0; }
-.lang-dropdown a { display: block; padding: 8px 16px; color: var(--text); text-decoration: none; font-size: 14px; white-space: nowrap; }
-.lang-dropdown a:hover { background: var(--bg-light); }
-.nav-lang:hover .lang-dropdown { display: block; }
+
+
+
+
+
+
+
+/* Language switcher */
+.language-switcher {
+    position: relative;
+    display: inline-block;
+}
+.language-btn {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.language-btn:hover {
+    background: #e8f2ff;
+}
+.language-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 5px;
+    background: white;
+    min-width: 180px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 9999;
+    padding: 4px 0;
+}
+.language-dropdown a {
+    display: block;
+    padding: 10px 14px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+.language-dropdown a:hover {
+    background: #f0f6ff;
+    color: #e63946;
+}
+.language-switcher:hover .language-dropdown,
+.language-switcher.active .language-dropdown {
+    display: block;
+}
+
 </style>
 <link rel="alternate" hreflang="en" href="https://yudaconcrete.github.io/faq.html">
 <link rel="alternate" hreflang="ru" href="https://yudaconcrete.github.io/ru/faq.html">
 <link rel="alternate" hreflang="x-default" href="https://yudaconcrete.github.io/">
+
+    <link rel="canonical" href="https://yudaconcrete.github.io/ru/faq.html">
 </head><body>
-<nav class="nav"><div class="nav-inner"><a href="/" class="nav-logo"><h1>Часто задаваемые вопросы</h1><span>Производитель бетонного оборудования</span></a>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/ru/" class="nav-logo"><h1>YudaHualong</h1><span>Concrete Batching Plant Solutions</span></a>
+    <div class="mobile-toggle" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('active')"><span></span><span></span><span></span></div>
     <ul class="nav-links">
-      <li><a href="/ru/">���ݧѧӧߧѧ�</a></li>
-      <li><a href="/ru/products/concrete-batching-plant.html">�����է�ܧ�ڧ�</a></li>
-      <li><a href="/ru/products/hzs-concrete-batching-plant.html">���֧�ڧ� HZS</a></li>
-      <li><a href="/ru/products/mobile-concrete-batching-plant.html">����ҧڧݧ�ߧ��</a></li>
-      <li><a href="/ru/about.html">�� �ߧѧ�</a></li>
-      <li><a href="/ru/contact.html" class="nav-cta">���ӧ�٧ѧ����</a></li>
-          <li class="nav-lang"><a href="javascript:void(0)" onclick="toggleLang()">[🌐] ������ܧڧ� ��</a>
-        <ul class="lang-dropdown">
-          <li><a href="/">[EN] English</a></li>
-          <li><a href="/ru/">[RU] Русский</a></li>
-          <li><a href="/ar/">[AR] العربية</a></li>
-          <li><a href="/es/">[ES] Español</a></li>
-          <li><a href="/fr/">[FR] Français</a></li>
-          <li><a href="/pt/">[PT] Português</a></li>
+      <li><a href="/ru/">Главная</a></li>
+      <li><a href="/ru/products/concrete-batching-plant.html">Продукция</a></li>
+      <li><a href="/ru/products/hzs-concrete-batching-plant.html">Серия HZS</a></li>
+      <li><a href="/ru/products/mobile-concrete-batching-plant.html">Мобильные</a></li>
+      <li><a href="/ru/about.html">О нас</a></li>
+      <li><a href="/ru/countries/">Рынки</a></li>
+      <li><a href="/ru/contact.html" class="nav-cta">Связаться</a></li>
+      <li class="language-switcher">
+            <button class="language-btn" onclick="this.parentElement.classList.toggle('active')">🌐 Русский ▾</button>
+            <div class="language-dropdown">
+                <a href="/">English</a>
+                <a href="/ru/">Русский</a>
+                <a href="/ar/">العربية</a>
+                <a href="/es/">Español</a>
+                <a href="/fr/">Français</a>
+                <a href="/pt/">Português</a>
+            </div>
+          </li>
         </ul>
-      </li>
-    </ul></div></nav>
+  </div>
+</nav>
 <section class="page-header"><div class="container"><h1>Часто задаваемые вопросы</h1></div></section>
 <section class="section"><div class="container" style="max-width:800px;margin:0 auto;">
 <div class="faq-list">
-<div class="faq-item open"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How much does a concrete batching plant cost?<span class="faq-q-icon">+</span></div><div class="faq-a">Price depends on capacity, configuration, and automation level. A basic HZS60 starts around. Contact us with your requirements for a detailed factory-direct quotation.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Do you provide installation service?<span class="faq-q-icon">+</span></div><div class="faq-a">Yes. We offer full installation guidance and on-site commissioning support. Our technical team can travel to your project site to ensure smooth setup and operation.</div></div>
+<div class="faq-item open"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Сколько стоит бетонный завод?<span class="faq-q-icon">+</span></div><div class="faq-a">Price depends on capacity, configuration, and automation level. A basic HZS60 starts around. Contact us with your requirements for a detailed factory-direct quotation.</div></div>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Предоставляете ли вы услуги по установке?<span class="faq-q-icon">+</span></div><div class="faq-a">Yes. We offer full installation guidance and on-site commissioning support. Our technical team can travel to your project site to ensure smooth setup and operation.</div></div>
 <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What countries do you export to?<span class="faq-q-icon">+</span></div><div class="faq-a">We have successfully exported to Russia, Nigeria, Pakistan, Kenya, Saudi Arabia, Vietnam, and multiple other countries. We handle international logistics, customs clearance, and documentation.</div></div>
 <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">���ܧ�ݧ�ܧ� �ӧ�֧ާ֧ߧ� �٧ѧߧڧާѧ֧� ����ڧ٧ӧ�է��ӧ� �� �է���ѧӧܧ�?<span class="faq-q-icon">+</span></div><div class="faq-a">�����ڧ٧ӧ�է��ӧ� 15-30 �էߧ֧�. ������ѧӧܧ� �� ���֧ߧ��ѧݧ�ߧ�� ���٧ڧ� 12-18 �էߧ֧� ��� ��/��.</div></div>
 <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">���� ���֧է���ѧӧݧ�֧�� ����ݧ֧���էѧاߧ�� ��ҧ�ݧ�اڧӧѧߧڧ�?<span class="faq-q-icon">+</span></div><div class="faq-a">����. ����اڧ٧ߧ֧ߧߧ�� �٧ѧ��ѧ��� �� ��էѧݧ֧ߧߧѧ� ���էէ֧�اܧ� 24/7.</div></div>
@@ -57,14 +116,17 @@
   <div class="footer-brand"><h3>YudaHualong Concrete</h3><p>�����ڧ٧ӧ�էڧ�֧ݧ� �ҧ֧��ߧߧ�� �٧ѧӧ�է��. �����ާ�� �����ѧӧܧ� �ڧ� ���ا�ߧ�ا��, ���ڧ�ѧ�.</p><p style="margin-top:12px;">���֧�: +86 18638788818</p></div>
   <div><h4>�����է�ܧ�ڧ�</h4><ul><li><a href="/ru/products/hzs-concrete-batching-plant.html">���֧�ڧ� HZS</a></li><li><a href="/ru/products/mobile-concrete-batching-plant.html">����ҧڧݧ�ߧ��</a></li><li><a href="/ru/products/concrete-mixer.html">���֧��ߧ��ާ֧�ڧ�֧ݧ�</a></li><li><a href="/ru/products/concrete-batching-plant.html">����� ����է�ܧ�ڧ�</a></li></ul></div>
   <div><h4>����ާ�ѧߧڧ�</h4><ul><li><a href="/ru/about.html">�� YudaHualong</a></li><li><a href="/ru/company/factory.html">���ѧӧ��</a></li><li><a href="/ru/company/certificates.html">���֧��ڧ�ڧܧѧ��</a></li><li><a href="/ru/company/customer-visits.html">���ڧ٧ڧ�� �ܧݧڧ֧ߧ���</a></li></ul></div>
-  <div><h4>����էէ֧�اܧ�</h4><ul><li><a href="/ru/contact.html">����ߧ�ѧܧ��</a></li><li><a href="/ru/faq.html">FAQ</a></li></ul></div>
+  <div><h4>����էէ֧�اܧ�</h4><ul><li><a href="/ru/contact.html">����ߧ�ѧܧ��</a></li><li><a href="/ru/faq.html">ЧаВо</a></li></ul></div>
 </div><div class="footer-bottom">&copy; 2026 YudaHualong Concrete. ����� ���ѧӧ� �٧ѧ�ڧ�֧ߧ�. | ���ا�ߧ�ا��, ����ߧѧߧ�, ���ڧ�ѧ�</div></div></footer>
 <script>document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')))</script>
 <script>
-function toggleLang() { document.querySelector('.lang-dropdown').classList.toggle('show'); }
-document.addEventListener('click', function(e) { if(!e.target.closest('.nav-lang')) document.querySelector('.lang-dropdown')?.classList.remove('show'); });
+
+);
 </script>
 </body></html>
+
+
+
 
 
 

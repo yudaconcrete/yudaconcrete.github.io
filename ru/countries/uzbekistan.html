@@ -9,38 +9,96 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../assets/css/style.css">
 <style>
-.nav-lang { position: relative; }
-.lang-dropdown { display: none; position: absolute; top: 100%; right: 0; background: white; box-shadow: 0 2px 12px rgba(0,0,0,0.15); border-radius: 8px; min-width: 160px; z-index: 1000; padding: 8px 0; list-style: none; }
-.lang-dropdown li { padding: 0; }
-.lang-dropdown a { display: block; padding: 8px 16px; color: var(--text); text-decoration: none; font-size: 14px; white-space: nowrap; }
-.lang-dropdown a:hover { background: var(--bg-light); }
-.nav-lang:hover .lang-dropdown { display: block; }
+
+
+
+
+
+
+
+/* Language switcher */
+.language-switcher {
+    position: relative;
+    display: inline-block;
+}
+.language-btn {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.language-btn:hover {
+    background: #e8f2ff;
+}
+.language-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 5px;
+    background: white;
+    min-width: 180px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 9999;
+    padding: 4px 0;
+}
+.language-dropdown a {
+    display: block;
+    padding: 10px 14px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+.language-dropdown a:hover {
+    background: #f0f6ff;
+    color: #e63946;
+}
+.language-switcher:hover .language-dropdown,
+.language-switcher.active .language-dropdown {
+    display: block;
+}
+
 </style>
 <!-- lang-switcher-added -->
 <link rel="alternate" hreflang="en" href="https://yudaconcrete.github.io/countries/uzbekistan.html">
 <link rel="alternate" hreflang="ru" href="https://yudaconcrete.github.io/ru/countries/uzbekistan.html">
+
+    <link rel="canonical" href="https://yudaconcrete.github.io/ru/countries/uzbekistan.html">
 </head>
 <body>
-<nav class="nav"><div class="nav-inner"><a href="/" class="nav-logo"><h1>袘械褌芯薪薪褘械 蟹邪胁芯写褘 写谢褟 校蟹斜械泻懈褋褌邪薪邪</h1><span>袩褉芯懈蟹胁芯写懈褌械谢褜 斜械褌芯薪薪芯谐芯 芯斜芯褉褍写芯胁邪薪懈褟</span></a>
-<ul class="nav-links">
-      <li><a href="/ru/">袚谢邪胁薪邪褟</a></li>
-      <li><a href="/ru/products/concrete-batching-plant.html">袩褉芯写褍泻褑懈褟</a></li>
-      <li><a href="/ru/products/hzs-concrete-batching-plant.html">小械褉懈褟 HZS</a></li>
-      <li><a href="/ru/products/mobile-concrete-batching-plant.html">袦芯斜懈谢褜薪褘械</a></li>
-      <li><a href="/ru/about.html">袨 薪邪褋</a></li>
-      <li><a href="../countries/">小褌褉邪薪褘</a></li>
-      <li><a href="/ru/contact.html" class="nav-cta">小胁褟蟹邪褌褜褋褟</a></li>
-          <li class="nav-lang"><a href="javascript:void(0)" onclick="toggleLang()">馃寪 袪褍褋褋泻懈泄 鈻?/a>
-        <ul class="lang-dropdown">
-          <li><a href="/">[EN] English</a></li>
-          <li><a href="/ru/">[RU] Русский</a></li>
-          <li><a href="/ar/">[AR] العربية</a></li>
-          <li><a href="/es/">[ES] Español</a></li>
-          <li><a href="/fr/">[FR] Français</a></li>
-          <li><a href="/pt/">[PT] Português</a></li>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/ru/" class="nav-logo"><h1>YudaHualong</h1><span>Concrete Batching Plant Solutions</span></a>
+    <div class="mobile-toggle" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('active')"><span></span><span></span><span></span></div>
+    <ul class="nav-links">
+      <li><a href="/ru/">Главная</a></li>
+      <li><a href="/ru/products/concrete-batching-plant.html">Продукция</a></li>
+      <li><a href="/ru/products/hzs-concrete-batching-plant.html">Серия HZS</a></li>
+      <li><a href="/ru/products/mobile-concrete-batching-plant.html">Мобильные</a></li>
+      <li><a href="/ru/about.html">О нас</a></li>
+      <li><a href="/ru/countries/">Рынки</a></li>
+      <li><a href="/ru/contact.html" class="nav-cta">Связаться</a></li>
+      <li class="language-switcher">
+            <button class="language-btn" onclick="this.parentElement.classList.toggle('active')">🌐 Русский ▾</button>
+            <div class="language-dropdown">
+                <a href="/">English</a>
+                <a href="/ru/">Русский</a>
+                <a href="/ar/">العربية</a>
+                <a href="/es/">Español</a>
+                <a href="/fr/">Français</a>
+                <a href="/pt/">Português</a>
+            </div>
+          </li>
         </ul>
-      </li>
-    </ul></div></nav>
+  </div>
+</nav>
 <section class="page-header"><div class="container">
 <div class="hero-badge">袩褉芯谐褉邪屑屑邪 袧褍褉谢褘 袞芯谢 &bull; CE 小械褉褌懈褎懈泻邪褌 &bull; 袞/袛 褔械褉械蟹 袗谢邪褕邪薪褜泻芯褍</div>
 <h1>袘械褌芯薪薪褘械 蟹邪胁芯写褘 写谢褟 校蟹斜械泻懈褋褌邪薪邪</h1>
@@ -120,12 +178,13 @@
   <div><h4>袩褉芯写褍泻褑懈褟</h4><ul><li><a href="/ru/products/hzs-concrete-batching-plant.html">小械褉懈褟 HZS</a></li><li><a href="/ru/products/mobile-concrete-batching-plant.html">袦芯斜懈谢褜薪褘械</a></li><li><a href="/ru/products/concrete-mixer.html">袘械褌芯薪芯褋屑械褋懈褌械谢懈</a></li><li><a href="/ru/products/concrete-batching-plant.html">袙褋褟 锌褉芯写褍泻褑懈褟</a></li></ul></div>
   <div><h4>袣芯屑锌邪薪懈褟</h4><ul><li><a href="/ru/about.html">袨 YudaHualong</a></li><li><a href="/ru/company/factory.html">袟邪胁芯写</a></li><li><a href="/ru/company/certificates.html">小械褉褌懈褎懈泻邪褌褘</a></li><li><a href="/ru/company/customer-visits.html">袙懈蟹懈褌褘 泻谢懈械薪褌芯胁</a></li>
       <li><a href="../countries/">小褌褉邪薪褘</a></li></ul></div>
-  <div><h4>袩芯写写械褉卸泻邪</h4><ul><li><a href="/ru/contact.html">袣芯薪褌邪泻褌褘</a></li><li><a href="/ru/faq.html">FAQ</a></li></ul></div>
+  <div><h4>袩芯写写械褉卸泻邪</h4><ul><li><a href="/ru/contact.html">袣芯薪褌邪泻褌褘</a></li><li><a href="/ru/faq.html">ЧаВо</a></li></ul></div>
 </div><div class="footer-bottom">&copy; 2026 YudaHualong Concrete. 袙褋械 锌褉邪胁邪 蟹邪褖懈褖械薪褘. | 效卸褝薪褔卸芯褍, 啸褝薪邪薪褜, 袣懈褌邪泄</div></div></footer>
 <script>
-function toggleLang() { document.querySelector('.lang-dropdown').classList.toggle('show'); }
-document.addEventListener('click', function(e) { if(!e.target.closest('.nav-lang')) document.querySelector('.lang-dropdown')?.classList.remove('show'); });
+
+);
 </script>
 </body>
 </html>
+
 

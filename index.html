@@ -31,9 +31,9 @@
         "@type": "ContactPoint",
         "telephone": "+86-18638788818",
         "contactType": "sales",
-        "availableLanguage": ["English", "Chinese", "Russian"]
-      }],
-      "areaServed": ["Kazakhstan", "Russia", "Nigeria", "Pakistan", "Saudi Arabia", "Kenya", "Uzbekistan"],
+        "availableLanguage": ["English", "Chinese", "Russian"[EN]
+      }[EN],
+      "areaServed": ["Kazakhstan", "Russia", "Nigeria", "Pakistan", "Saudi Arabia", "Kenya", "Uzbekistan"[EN],
       "image": "https://yudaconcrete.github.io/assets/images/company/factory-01.jpg",
       "foundingDate": "2000",
       "numberOfEmployees": "100-200",
@@ -60,13 +60,13 @@
       },
       "openingHoursSpecification": [{
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"[EN],
         "opens": "08:00",
         "closes": "18:00"
-      }],
+      }[EN],
       "priceRange": "$$",
-      "areaServed": ["Kazakhstan", "Russia", "Nigeria", "Pakistan", "Saudi Arabia", "Kenya", "Uzbekistan"],
-      "sameAs": ["https://yudaconcrete.github.io"]
+      "areaServed": ["Kazakhstan", "Russia", "Nigeria", "Pakistan", "Saudi Arabia", "Kenya", "Uzbekistan"[EN],
+      "sameAs": ["https://yudaconcrete.github.io"[EN]
     },
     {
       "@type": "Product",
@@ -89,30 +89,99 @@
           "@type": "Organization",
           "name": "YudaHualong Concrete"
         },
-        "areaServed": ["Kazakhstan", "Russia", "Nigeria", "Pakistan", "Saudi Arabia", "Kenya", "Uzbekistan"]
-      }],
+        "areaServed": ["Kazakhstan", "Russia", "Nigeria", "Pakistan", "Saudi Arabia", "Kenya", "Uzbekistan"[EN]
+      }[EN],
       "category": "Construction Equipment > Concrete Batching Plant",
       "material": "Steel",
       "award": "CE Certified, ISO 9001"
     }
-  ]
+  [EN]
 }
 </script>
 
 <style>
-.nav-lang { position: relative; }
-.lang-dropdown { display: none; position: absolute; top: 100%; right: 0; background: white; box-shadow: 0 2px 12px rgba(0,0,0,0.15); border-radius: 8px; min-width: 160px; z-index: 1000; padding: 8px 0; list-style: none; }
-.lang-dropdown li { padding: 0; }
-.lang-dropdown a { display: block; padding: 8px 16px; color: var(--text); text-decoration: none; font-size: 14px; white-space: nowrap; }
-.lang-dropdown a:hover { background: var(--bg-light); }
-.nav-lang:hover .lang-dropdown { display: block; }
+
+
+
+
+
+
+
+/* Language switcher */
+.language-switcher {
+    position: relative;
+    display: inline-block;
+}
+.language-btn {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.language-btn:hover {
+    background: #e8f2ff;
+}
+.language-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 5px;
+    background: white;
+    min-width: 180px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 9999;
+    padding: 4px 0;
+}
+.language-dropdown a {
+    display: block;
+    padding: 10px 14px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+.language-dropdown a:hover {
+    background: #f0f6ff;
+    color: #e63946;
+}
+.language-switcher:hover .language-dropdown,
+.language-switcher.active .language-dropdown {
+    display: block;
+}
+
 </style>
-<!-- lang-switcher-added -->
+
+
+
+
+
+
+
+
+
+
 <link rel="alternate" hreflang="en" href="https://yudaconcrete.github.io/index.html">
 <link rel="alternate" hreflang="ru" href="https://yudaconcrete.github.io/ru/index.html">
-<link rel="alternate" hreflang="ar" href="https://yudaconcrete.github.io/ar/">
-<link rel="alternate" hreflang="x-default" href="https://yudaconcrete.github.io/">
-</head>
+<link rel="alternate" hreflang="ar" href="https://yudaconcrete.github.io/ar/index.html">
+<link rel="alternate" hreflang="es" href="https://yudaconcrete.github.io/es/index.html">
+<link rel="alternate" hreflang="fr" href="https://yudaconcrete.github.io/fr/index.html">
+<link rel="alternate" hreflang="pt" href="https://yudaconcrete.github.io/pt/index.html">
+<link rel="alternate" hreflang="kk" href="https://yudaconcrete.github.io/kz/index.html">
+<link rel="alternate" hreflang="uz" href="https://yudaconcrete.github.io/uz/index.html">
+<link rel="alternate" hreflang="ky" href="https://yudaconcrete.github.io/kg/index.html">
+<link rel="alternate" hreflang="tg" href="https://yudaconcrete.github.io/tj/index.html">
+<link rel="alternate" hreflang="tk" href="https://yudaconcrete.github.io/tm/index.html">
+<link rel="alternate" hreflang="x-default" href="https://yudaconcrete.github.io/index.html">
+
+    <link rel="canonical" href="https://yudaconcrete.github.io/">
+</head>>
 <body>
 
 <nav class="nav">
@@ -127,17 +196,19 @@
       <li><a href="/about.html">About Us</a></li>
       <li><a href="/countries/">Global Markets</a></li>
       <li><a href="/contact.html" class="nav-cta">Get Quote</a></li>
-      <li class="nav-lang"><a href="javascript:void(0)" onclick="toggleLang()">[🌐] EN ��</a>
-        <ul class="lang-dropdown">
-          <li><a href="/">[EN] English</a></li>
-          <li><a href="/ru/">[RU] Русский</a></li>
-          <li><a href="/ar/">[AR] العربية</a></li>
-          <li><a href="/es/">[ES] Español</a></li>
-          <li><a href="/fr/">[FR] Français</a></li>
-          <li><a href="/pt/">[PT] Português</a></li>
+      <li class="language-switcher">
+            <button class="language-btn" onclick="this.parentElement.classList.toggle('active')">🌐 English ▾</button>
+            <div class="language-dropdown">
+                <a href="/">English</a>
+                <a href="/ru/">Русский</a>
+                <a href="/ar/">العربية</a>
+                <a href="/es/">Español</a>
+                <a href="/fr/">Français</a>
+                <a href="/pt/">Português</a>
+            </div>
         </ul>
-      </li>
-    </ul>
+  </div>
+</nav>
   </div>
 </nav>
 
@@ -447,8 +518,8 @@ document.querySelector('.mobile-toggle').addEventListener('click', function() {
 });
 </script>
 <script>
-function toggleLang() { document.querySelector('.lang-dropdown').classList.toggle('show'); }
-document.addEventListener('click', function(e) { if(!e.target.closest('.nav-lang')) document.querySelector('.lang-dropdown')?.classList.remove('show'); });
+
+document.addEventListener('click', function(e) { if(!e.target.closest('.language-switcher');
 </script>
 </body>
 </html>

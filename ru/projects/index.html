@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -10,47 +10,97 @@
 <link rel="stylesheet" href="../../assets/css/style.css">
 
 <style>
-.nav-lang { position: relative; }
-.lang-dropdown { display: none; position: absolute; top: 100%; right: 0; background: white; box-shadow: 0 2px 12px rgba(0,0,0,0.15); border-radius: 8px; min-width: 160px; z-index: 1000; padding: 8px 0; list-style: none; }
-.lang-dropdown li { padding: 0; }
-.lang-dropdown a { display: block; padding: 8px 16px; color: var(--text); text-decoration: none; font-size: 14px; white-space: nowrap; }
-.lang-dropdown a:hover { background: var(--bg-light); }
-.nav-lang:hover .lang-dropdown { display: block; }
-.project-case { background: var(--bg-light); border-radius: var(--radius); padding: 24px; margin-bottom: 20px; display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; }
-.project-case img { width: 300px; max-width: 100%; border-radius: 8px; }
-.project-case-tag { display: inline-block; background: var(--primary); color: white; padding: 2px 10px; border-radius: 4px; font-size: 12px; font-weight: 600; margin-bottom: 8px; }
-.project-case h3 { margin-bottom: 4px; }
-.project-case p { color: var(--text-gray); font-size: 14px; line-height: 1.6; }
-.project-detail { font-size: 13px; color: var(--text-gray); margin-top: 8px; }
-.project-detail span { display: inline-block; margin-right: 16px; }
-.project-detail strong { color: var(--text); }
+
+
+
+
+
+
+
+/* Language switcher */
+.language-switcher {
+    position: relative;
+    display: inline-block;
+}
+.language-btn {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.language-btn:hover {
+    background: #e8f2ff;
+}
+.language-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 5px;
+    background: white;
+    min-width: 180px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 9999;
+    padding: 4px 0;
+}
+.language-dropdown a {
+    display: block;
+    padding: 10px 14px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+.language-dropdown a:hover {
+    background: #f0f6ff;
+    color: #e63946;
+}
+.language-switcher:hover .language-dropdown,
+.language-switcher.active .language-dropdown {
+    display: block;
+}
+
 </style>
 
 <link rel="alternate" hreflang="en" href="https://yudaconcrete.github.io/projects/">
 <link rel="alternate" hreflang="ru" href="https://yudaconcrete.github.io/ru/projects/">
 <link rel="alternate" hreflang="x-default" href="https://yudaconcrete.github.io/">
+
+    <link rel="canonical" href="https://yudaconcrete.github.io/ru/projects/index.html">
 </head>
 <body>
-<nav class="nav"><div class="nav-inner"><a href="/ru/" class="nav-logo"><h1>YudaHualong</h1><span>Производитель бетонного оборудования</span></a>
-<ul class="nav-links">
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/ru/" class="nav-logo"><h1>YudaHualong</h1><span>Concrete Batching Plant Solutions</span></a>
+    <div class="mobile-toggle" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('active')"><span></span><span></span><span></span></div>
+    <ul class="nav-links">
       <li><a href="/ru/">Главная</a></li>
       <li><a href="/ru/products/concrete-batching-plant.html">Продукция</a></li>
       <li><a href="/ru/products/hzs-concrete-batching-plant.html">Серия HZS</a></li>
       <li><a href="/ru/products/mobile-concrete-batching-plant.html">Мобильные</a></li>
       <li><a href="/ru/about.html">О нас</a></li>
-      <li><a href="/ru/countries/">Страны</a></li>
+      <li><a href="/ru/countries/">Рынки</a></li>
       <li><a href="/ru/contact.html" class="nav-cta">Связаться</a></li>
-          <li class="nav-lang"><a href="javascript:void(0)" onclick="toggleLang()">Русский ▼</a>
-        <ul class="lang-dropdown">
-          <li><a href="/">[EN] English</a></li>
-          <li><a href="/ru/">[RU] Русский</a></li>
-          <li><a href="/ar/">[AR] العربية</a></li>
-          <li><a href="/es/">[ES] Español</a></li>
-          <li><a href="/fr/">[FR] Français</a></li>
-          <li><a href="/pt/">[PT] Português</a></li>
+      <li class="language-switcher">
+            <button class="language-btn" onclick="this.parentElement.classList.toggle('active')">🌐 Русский ▾</button>
+            <div class="language-dropdown">
+                <a href="/">English</a>
+                <a href="/ru/">Русский</a>
+                <a href="/ar/">العربية</a>
+                <a href="/es/">Español</a>
+                <a href="/fr/">Français</a>
+                <a href="/pt/">Português</a>
+            </div>
+          </li>
         </ul>
-      </li>
-    </ul></div></nav>
+  </div>
+</nav>
 
 <section class="page-header"><div class="container">
 <h1>Проекты и поставки</h1>
@@ -116,11 +166,12 @@
   <div class="footer-brand"><h3>YudaHualong Concrete</h3><p>Производитель бетонных заводов. Прямые поставки из Чжэнчжоу, Китай.</p><p style="margin-top:12px;">Тел: +86 18638788818</p></div>
   <div><h4>Продукция</h4><ul><li><a href="/ru/products/hzs-concrete-batching-plant.html">Серия HZS</a></li><li><a href="/ru/products/mobile-concrete-batching-plant.html">Мобильные</a></li><li><a href="/ru/products/concrete-mixer.html">Бетоносмесители</a></li><li><a href="/ru/products/concrete-batching-plant.html">Вся продукция</a></li></ul></div>
   <div><h4>Компания</h4><ul><li><a href="/ru/about.html">О YudaHualong</a></li><li><a href="/ru/company/factory.html">Завод</a></li><li><a href="/ru/company/certificates.html">Сертификаты</a></li><li><a href="/ru/company/customer-visits.html">Визиты клиентов</a></li><li><a href="/ru/countries/">Страны</a></li></ul></div>
-  <div><h4>Поддержка</h4><ul><li><a href="/ru/contact.html">Контакты</a></li><li><a href="/ru/faq.html">FAQ</a></li></ul></div>
+  <div><h4>Поддержка</h4><ul><li><a href="/ru/contact.html">Контакты</a></li><li><a href="/ru/faq.html">ЧаВо</a></li></ul></div>
 </div><div class="footer-bottom">&copy; 2026 YudaHualong Concrete. Все права защищены. | Чжэнчжоу, Хэнань, Китай</div></div></footer>
 <script>
-function toggleLang() { document.querySelector('.lang-dropdown').classList.toggle('show'); }
-document.addEventListener('click', function(e) { if(!e.target.closest('.nav-lang')) document.querySelector('.lang-dropdown')?.classList.remove('show'); });
+
+);
 </script>
 </body>
 </html>
+
